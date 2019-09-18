@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.UserinfoMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Userinfo">
+    <id column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="departid" jdbcType="INTEGER" property="departid" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="roleid" jdbcType="INTEGER" property="roleid" />
+    <result column="userstate" jdbcType="INTEGER" property="userstate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userid, username, password, departid, gender, roleid, userstate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from userinfo
+    where userid = #{userid,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByUname" resultType="cn.entity.Userinfo">
+        select * from userinfo where username=#{username}
+  </select>
+
+  <select id="selectJurisdictionByUid" resultType="map">
+    SELECT s2.nodeid,t.enmu,t.parentnodeid,t.displayorder,s2.`displayname`,s2.`displayorder`,s2.nodeurl FROM (
+    SELECT s.`nodeid`,s.`displayname` enmu,s.`displayorder`,s.`parentnodeid`
+    FROM userinfo u,roleinfo r1,roleright r2,sysfun s
+    WHERE u.`roleid`=r1.`roleid` AND r1.`roleid`=r2.`roleid` AND r2.`nodeid`=s.`nodeid` and u.userid=#{userid}) t,sysfun s2
+    WHERE t.parentnodeid = s2.`parentnodeid` order by t.displayorder,s2.`displayorder`
+  </select>
+
+  <select id="findUserinfoBydepartid" resultType="cn.entity.Userinfo">
+        select * from userinfo where departid=#{departid}
+  </select>
+
+  <select id="findUser" resultType="map">
+       SELECT u.`userid`,u.`username`,u.`password`,r.`rolename`,u.`gender`,u.`departid` ,u.`userstate`,u.`roleid`,d.`departname`
+        FROM userinfo u,roleinfo r,departinfo d
+        WHERE u.`roleid` = r.`roleid` and u.`departid`=d.`departid`
+        <if test="page.t.username!=null and page.t.username!=''">
+          and u.username like "%"#{page.t.username}"%"
+        </if>
+        limit #{page.t.pageNo},#{page.pageSize}
+  </select>
+
+  <select id="findUserCount" resultType="java.lang.Integer">
+        select count(1) from userinfo u,roleinfo r
+        where u.`roleid` = r.`roleid`
+        <if test="map.username!=null and map.username!=''">
+          and u.username like "%"#{map.username}"%"
+        </if>
+  </select>
+
+    <select id="userinfoAdd">
+        insert userinfo values(0,#{map.username},#{map.password},#{map.departid},#{map.gender},#{map.roleid},#{map.userstate})
+    </select>
+
+    <select id="userinfoUpdate">
+        update userinfo set username=#{map.username},password=#{map.pwd},departid=#{map.departid},gender=#{map.gender},roleid=#{map.roleid},userstate=#{map.userstate} where userid=#{map.userid}
+    </select>
+
+    <select id="userinfoDel">
+        delete from userinfo where userid=#{userid}
+    </select>
+</mapper>

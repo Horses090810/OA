@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.BranchinfoMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Branchinfo">
+    <id column="branchid" jdbcType="INTEGER" property="branchid" />
+    <result column="branchname" jdbcType="VARCHAR" property="branchname" />
+    <result column="branchshortname" jdbcType="VARCHAR" property="branchshortname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    branchid, branchname, branchshortname
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from branchinfo
+    where branchid = #{branchid,jdbcType=INTEGER}
+  </select>
+
+  <select id="findByBranchinfo" resultType="cn.entity.Branchinfo">
+        select * from branchinfo where 1=1
+          <if test="page.t.branchname!=null and page.t.branchname!=''">
+            and branchname like concat('%',#{page.t.branchname},'%')
+          </if>
+          <if test="page.t.branchshortname!=null and page.t.branchshortname!=''">
+            and branchshortname like concat('%',#{page.t.branchshortname},'%')
+          </if>
+             limit #{pageNo},#{page.pageSize}
+  </select>
+
+    <select id="findByBranchinfoCount" resultType="java.lang.Integer">
+        select count(1) from branchinfo
+    </select>
+
+  <select id="branchinfoUpdate">
+        update branchinfo
+        set branchname=#{branchinfo.branchname},branchshortname=#{branchinfo.branchshortname}
+        where branchid=#{branchinfo.branchid}
+  </select>
+
+  <select id="branchinfoAdd">
+    insert branchinfo values (0,#{branchinfo.branchname},#{branchinfo.branchshortname})
+  </select>
+
+  <select id="branchinfoDel">
+    delete from branchinfo where branchid=#{branchid}
+  </select>
+
+  <select id="selectAll" resultType="cn.entity.Branchinfo">
+        select * from branchinfo
+  </select>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.AccessoryfileMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Accessoryfile">
+    <id column="accessoryid" jdbcType="INTEGER" property="accessoryid" />
+    <result column="fileid" jdbcType="INTEGER" property="fileid" />
+    <result column="accessoryname" jdbcType="VARCHAR" property="accessoryname" />
+    <result column="accessorysize" jdbcType="INTEGER" property="accessorysize" />
+    <result column="accessorytype" jdbcType="INTEGER" property="accessorytype" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="accessorypath" jdbcType="VARCHAR" property="accessorypath" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    accessoryid, fileid, accessoryname, accessorysize, accessorytype, createdate, accessorypath
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from accessoryfile
+    where accessoryid = #{accessoryid,jdbcType=INTEGER}
+  </select>
+</mapper>

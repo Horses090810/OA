@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.LoginlogMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Loginlog">
+    <id column="loginid" jdbcType="INTEGER" property="loginid" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="logintime" jdbcType="TIMESTAMP" property="logintime" />
+    <result column="ifsuccess" jdbcType="INTEGER" property="ifsuccess" />
+    <result column="loginuserip" jdbcType="VARCHAR" property="loginuserip" />
+    <result column="logindesc" jdbcType="VARCHAR" property="logindesc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    loginid, userid, logintime, ifsuccess, loginuserip, logindesc
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from loginlog
+    where loginid = #{loginid,jdbcType=INTEGER}
+  </select>
+</mapper>

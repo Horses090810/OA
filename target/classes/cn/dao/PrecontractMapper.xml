@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.PrecontractMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Precontract">
+    <id column="precontractid" jdbcType="INTEGER" property="precontractid" />
+    <result column="scheduleid" jdbcType="INTEGER" property="scheduleid" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    precontractid, scheduleid, userid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from precontract
+    where precontractid = #{precontractid,jdbcType=INTEGER}
+  </select>
+
+  <insert id="addPrecontract">
+        insert into precontract values (0,#{scheduleid},#{userid})
+  </insert>
+
+  <select id="selectByscheduleid" parameterType="java.lang.Integer" resultType="map">
+        SELECT p.*,u.`username`,d.`departname` FROM precontract p,userinfo u ,departinfo d
+WHERE u.`userid`=p.`userid` AND d.`departid`=u.`departid` AND p.`scheduleid`=#{scheduleid}
+  </select>
+
+  <delete id="delperson">
+        delete from precontract where scheduleid=#{scheduleid} and userid=#{userid}
+  </delete>
+</mapper>

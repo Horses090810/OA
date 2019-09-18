@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.UserstateMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Userstate">
+    <id column="userstateid" jdbcType="INTEGER" property="userstateid" />
+    <result column="userstatename" jdbcType="VARCHAR" property="userstatename" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userstateid, userstatename
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from userstate
+    where userstateid = #{userstateid,jdbcType=INTEGER}
+  </select>
+</mapper>

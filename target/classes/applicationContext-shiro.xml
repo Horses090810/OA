@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd ">
+
+
+    <!--配置shiro过滤器-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!--指定安全管理器-->
+        <property name="securityManager" ref="securityManager"/>
+
+        <!--指定，如果拦截请求发现用户没有登录，发出什么请求名称，找到一个控制器类，然后跳转到登录界面-->
+        <property name="loginUrl" value="/login.do"/>
+
+        <!--指定，哪些路径shiro要拦截，哪些路径shiro不拦截-->
+        <property name="filterChainDefinitions">
+            <value >
+                /img/**=anon
+                /assets/**=anon
+                /fonts/**=anon
+                /js/**=anon
+                /css/**=anon
+                /favicon.ico = anon
+                /logout.do=logout
+                /**=authc
+            </value>
+        </property>
+    </bean>
+
+    <!--注册安全管理器-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="myRealm"/>
+        <property name="cacheManager" ref="cacheManager"/>
+     </bean>
+
+    <!--注册Realm类-->
+    <bean id="myRealm" class="cn.util.MyRealm">
+        <property name="credentialsMatcher">
+            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+                <property name="hashAlgorithmName" value="MD5"/>
+                <property name="hashIterations" value="3"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>
+    </bean>
+</beans>

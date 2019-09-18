@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.DepartinfoMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Departinfo">
+    <id column="departid" jdbcType="INTEGER" property="departid" />
+    <result column="departname" jdbcType="VARCHAR" property="departname" />
+    <result column="principaluser" jdbcType="INTEGER" property="principaluser" />
+    <result column="connecttelno" jdbcType="VARCHAR" property="connecttelno" />
+    <result column="connectmobiletelno" jdbcType="VARCHAR" property="connectmobiletelno" />
+    <result column="faxes" jdbcType="VARCHAR" property="faxes" />
+    <result column="branchid" jdbcType="INTEGER" property="branchid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    departid, departname, principaluser, connecttelno, connectmobiletelno, faxes, branchid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from departinfo
+    where departid = #{departid,jdbcType=INTEGER}
+  </select>
+
+  <select id="findByDepartinfoCount" resultType="java.lang.Integer">
+        select count(1) from departinfo d,userinfo u where d.`principaluser`=u.`userid`
+      <if test="map.departname!=null and map.departname!=''">
+          and d.departname like "%"#{map.departname}"%"
+      </if>
+      <if test="map.principaluser!=null and map.principaluser!=''">
+          and u.username like "%"#{map.principaluser}"%"
+      </if>
+  </select>
+  <select id="findDepartinfo" resultType="map">
+       SELECT d.`branchid`,d.`departid`,d.`departname`,d.`connecttelno`,d.`connectmobiletelno`,d.`faxes` ,u.`username`,b.`branchname`,u.`userid`
+        FROM departinfo d,userinfo u,branchinfo b
+        WHERE d.`principaluser`=u.`userid` AND d.`branchid`=b.`branchid`
+        <if test="page.t.departname!=null and page.t.departname!=''">
+          and d.departname like "%"#{page.t.departname}"%"
+        </if>
+        <if test="page.t.principaluser!=null and page.t.principaluser!=''">
+          and u.username like "%"#{page.t.principaluser}"%"
+        </if>
+        limit #{page.t.pageNo},#{page.pageSize}
+  </select>
+
+    <select id="findDepartBybranchid" resultType="cn.entity.Departinfo">
+        select * from departinfo d where d.branchid=#{branchid}
+    </select>
+
+    <select id="departAdd">
+        insert departinfo values(0,#{map.departname},#{map.principaluser},#{map.connecttelno},#{map.connectmobiletelno},#{map.faxes},#{map.branchid})
+    </select>
+
+    <select id="departUpdate">
+        update departinfo SET
+            departname=#{map.departname},
+            principaluser=#{map.principaluser},
+            connecttelno=#{map.connecttelno},
+            connectmobiletelno=#{map.connectmobiletelno},
+            faxes=#{map.faxes},
+            branchid=#{map.branchid} where departid=#{map.departid}
+    </select>
+
+    <select id="departDel">
+        delete from departinfo where departid=#{departid}
+    </select>
+
+    <select id="findDepartAll" resultType="cn.entity.Departinfo">
+        select * from departinfo
+    </select>
+</mapper>

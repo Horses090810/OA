@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.MessageMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Message">
+    <id column="messageid" jdbcType="INTEGER" property="messageid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="bigintime" jdbcType="TIMESTAMP" property="bigintime" />
+    <result column="endtime" jdbcType="TIMESTAMP" property="endtime" />
+    <result column="fromuserid" jdbcType="INTEGER" property="fromuserid" />
+    <result column="ifpublish" jdbcType="INTEGER" property="ifpublish" />
+    <result column="recordtime" jdbcType="TIMESTAMP" property="recordtime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    messageid, title, content, type, bigintime, endtime, fromuserid, ifpublish, recordtime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from message
+    where messageid = #{messageid,jdbcType=INTEGER}
+  </select>
+</mapper>

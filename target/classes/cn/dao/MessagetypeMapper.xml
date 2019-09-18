@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.MessagetypeMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Messagetype">
+    <id column="messagetypeid" jdbcType="INTEGER" property="messagetypeid" />
+    <result column="messagetypename" jdbcType="VARCHAR" property="messagetypename" />
+    <result column="messagetypedesc" jdbcType="VARCHAR" property="messagetypedesc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    messagetypeid, messagetypename, messagetypedesc
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from messagetype
+    where messagetypeid = #{messagetypeid,jdbcType=INTEGER}
+  </select>
+</mapper>

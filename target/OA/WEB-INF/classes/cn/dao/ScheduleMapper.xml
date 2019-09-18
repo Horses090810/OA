@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.ScheduleMapper">
+  <resultMap id="BaseResultMap" type="cn.entity.Schedule">
+    <id column="scheduleid" jdbcType="INTEGER" property="scheduleid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="meetingid" jdbcType="INTEGER" property="meetingid" />
+    <result column="bigintime" jdbcType="TIMESTAMP" property="bigintime" />
+    <result column="endtime" jdbcType="TIMESTAMP" property="endtime" />
+    <result column="schcontent" jdbcType="VARCHAR" property="schcontent" />
+    <result column="createuser" jdbcType="INTEGER" property="createuser" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="ifprivate" jdbcType="INTEGER" property="ifprivate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    scheduleid, title, address, meetingid, bigintime, endtime, schcontent, createuser, 
+    createtime, ifprivate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from schedule
+    where scheduleid = #{scheduleid,jdbcType=INTEGER}
+  </select>
+</mapper>
