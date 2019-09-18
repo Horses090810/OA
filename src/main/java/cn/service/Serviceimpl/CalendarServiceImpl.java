@@ -58,4 +58,14 @@ public class CalendarServiceImpl implements CalendarService {
     public void delperson(Integer scheduleid, Integer userid) {
         precontractMapper.delperson(scheduleid,userid);
     }
+
+    @Override
+    public void updateCalendar(Map<String, Object> map) {
+        scheduleMapper.updateCalendar(map);
+    }
+
+    @Override
+    public void delCalentar(Integer scheduleid) {
+        scheduleMapper.delCalentar(scheduleid);
+    }
 }

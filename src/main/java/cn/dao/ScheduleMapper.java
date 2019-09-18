@@ -13,5 +13,7 @@ public interface ScheduleMapper {
 
     List<Schedule> findMyCalendar(@Param("createuser") Integer createuser);
 
+    void updateCalendar(Map<String,Object> map);
 
+    void delCalentar(Integer scheduleid);
 }

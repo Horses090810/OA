@@ -23,4 +23,8 @@ public interface CalendarService {
     Map<String,Object> selectByPrimaryKey(Integer scheduleid);
 
     List<Map<String,Object>> selectByscheduleid(Integer scheduleid);
+
+    void updateCalendar(Map<String,Object> map);
+
+    void delCalentar(Integer scheduleid);
 }

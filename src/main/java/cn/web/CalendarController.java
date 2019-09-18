@@ -145,4 +145,19 @@ public class CalendarController {
         calendarService.delperson(scheduleid,userid);
         return "del";
     }
+
+    @RequestMapping("updateCalendar")
+    public String updateCalendar(@RequestParam Map<String,Object> map){
+        if(map.get("ifprivate")==null){
+            map.put("ifprivate",0);
+        }
+        calendarService.updateCalendar(map);
+        return "redirect:/mycalendar.do";
+    }
+
+    @RequestMapping("delCalentar")
+    public String delCalentar(Integer scheduleid){
+        calendarService.delCalentar(scheduleid);
+        return "redirect:/mycalendar.do";
+    }
 }

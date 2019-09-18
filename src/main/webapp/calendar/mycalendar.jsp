@@ -121,7 +121,7 @@
 
                         $.each(data.precontracts,function (i,s) {
                             var input='<input onclick="delperson(this);" ' +
-                                'value="'+s.departname+"-"+s.username+'" type="text" name="" ' +
+                                'value="'+s.departname+"-"+s.username+'" type="text" name="'+s.userid+'" ' +
                                 'style="font-size: 15px;width: 200px;cursor: pointer;height: 20px;' +
                                 'background-color: transparent;border: 0px;">' +
                                 '<input type="hidden" name="userid-'+s.userid+'" value="'+s.userid+'">';
@@ -130,8 +130,9 @@
                         })
 
                         flag=true;
-
+                        $('#delCalentar').prop('disabled',false);
                         $('button[type=submit]').html('保存退出');
+                        $('#myform').attr("action","updateCalendar.do");
                     },'JSON')
                 }
             });
@@ -186,7 +187,8 @@
         function del() {
             $('#person input').each(function () {
                 if($(this).css('background-color')=='rgb(255, 255, 255)'){
-                    var userid = $(this).attr('name')
+                    var userid = $(this).attr('name');
+                    var scheduleid=$('input[name=scheduleid]').val();
                     if(flag){
                         $.post("delperson.do",'userid='+userid+"&scheduleid="+scheduleid,function (data) {
                             console.log(data);
@@ -196,10 +198,20 @@
                 }
             })
         }
-        function close() {
+        function closeModal() {
+            flag=false;
             $('#person input').each(function () {
                 $(this).remove();
             });
+            $(':input').val('');
+            $('input[name=ifprivate]').prop('checked',false);
+            $('button[type=submit]').html('添加');
+            $('#delCalentar').prop('disabled',true);
+        }
+        
+        function deleteCalentar() {
+            var scheduleid=$('input[name=scheduleid]').val();
+            location.href='delCalentar.do?scheduleid='+scheduleid;
         }
     </script>
 </head>
@@ -221,7 +233,7 @@
 
         <div class="modal-header" style="width: 100%;height: 100%;">
             <div class="panel-body">
-                <form action="addCalendar.do" method="post" class="form-horizontal" role="form">
+                <form action="addCalendar.do" id="myform" method="post" class="form-horizontal" role="form">
                     <div class="form-group">
                         <span style="float: left;line-height: 33px;">主题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <div class="col-lg-10" style="width: 435px">
@@ -285,8 +297,8 @@
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <button type="submit" class="btn btn-danger">提交</button>
-                            <button type="button" class="btn btn-danger">删除</button>
-                            <button onclick="close();" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button id="delCalentar" disabled type="button" class="btn btn-danger" onclick="deleteCalentar();">删除</button>
+                            <button onclick="closeModal();" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                         </div>
                     </div>
                 </form>

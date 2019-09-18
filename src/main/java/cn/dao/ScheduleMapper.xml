@@ -34,4 +34,15 @@
   <select id="findMyCalendar" resultType="cn.entity.Schedule">
         select * from schedule where createuser=#{createuser}
   </select>
+
+  <update id="updateCalendar" parameterType="map">
+        update schedule SET title=#{title},address=#{address},meetingid=#{meetingid},
+                bigintime=#{begintime},endtime=#{endtime},schcontent=#{schcontent},
+                ifprivate=#{ifprivate}
+                where scheduleid=#{scheduleid}
+  </update>
+
+  <delete id="delCalentar" parameterType="java.lang.Integer">
+        delete from schedule where scheduleid=#{scheduleid}
+  </delete>
 </mapper>
