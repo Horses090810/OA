@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="OA:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2ef9d5-373f-4e35-a6f9-95c7fa614af0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/asus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/songshiwen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/service/FileinfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/FileinfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/css/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/department.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/department_tail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/100_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/1_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ccc_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/colse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/opne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/table_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/table_del.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/table_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/table_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jQuery-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jquery.ztree.core-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jquery.ztree.excheck-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/jquery.ztree.exedit-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/leg-tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/log.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/skin/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-2.2.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/asus.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/OA.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext-shiro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/AccessoryfileMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/AccessoryfileMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/BranchinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/BranchinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/DepartinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/DepartinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FiletypeinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FiletypeinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/LoginlogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/LoginlogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ManualsignMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ManualsignMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MeetinginfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MeetinginfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessageMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessageMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetouserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetouserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetypeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MynoteMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MynoteMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/OperatelogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/OperatelogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/PrecontractMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/PrecontractMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ReadcommonmessageMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ReadcommonmessageMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RoleinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RoleinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RolerightMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RolerightMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/SysfunMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/SysfunMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserinfoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserinfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserstateMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserstateMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/WorktimeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/WorktimeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Accessoryfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Branchinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Departinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Fileinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Filetypeinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Loginlog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Manualsign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Meetinginfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Messagetouser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Messagetype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Mynote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Operatelog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Precontract.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Readcommonmessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Roleinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Roleright.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Sysfun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Userinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Userstate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Worktime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/CalendarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/PersonnelServiece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/CalendarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/PersonnelServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/UserinfoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/UserinfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/util/MyRealm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/util/Pagetion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/CalendarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/FileUpload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/PersonnelController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shiro-ehcache.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/META-INF/OA.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/js/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/js/fullcalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/js/jquery-ui-1.10.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/js/jquery-ui-1.10.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/js/jquery-ui-1.9.2.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/js/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/main/right.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/CalendarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/CalendarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/CalendarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/CalendarServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/CalendarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/CalendarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-09-18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/begin_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/begin_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/calendar/mycalendar_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/calendar/mycalendar_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/login_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/main/right_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/main/right_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/branchinfo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/branchinfo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/departAddorUpdate_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/departAddorUpdate_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/departinfo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/departinfo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/userinfoAddorUpdate_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/userinfoAddorUpdate_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/userinfo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/personnel/userinfo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/right_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/right_jsp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,30 +126,197 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="308656394">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="2" />
+          <entry key="html" value="1" />
+          <entry key="java" value="5" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="2" />
+          <entry key="svg" value="1" />
+          <entry key="woff2" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="5" />
+          <entry key="JSP" value="2" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="SVG" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="234" />
+          <entry key="jsp" value="535" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JSP" value="535" />
+          <entry key="JavaScript" value="233" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-407">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/department.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/department_tail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#table#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/UserinfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/department.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/department_tail.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OA Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OA Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OA Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=local" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="695" />
-    <option name="width" value="1235" />
-    <option name="height" value="1030" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="32" />
+    <option name="y" value="108" />
+    <option name="width" value="1940" />
+    <option name="height" value="960" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,21 +336,117 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="Serviceimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bstable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569219171480" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\js\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\js\bstable\skin" />
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\js\fonts" />
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\fonts" />
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\css" />
+      <recent name="C:\Users\songshiwen\Desktop\OA\src\main\webapp\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -173,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration name="OA [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -199,6 +486,83 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.241" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="OA:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_OA_4" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50854" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="OA:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.OA [tomcat7:run]" />
+      <item itemvalue="Tomcat Server.Unnamed" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\asus\AppData\Roaming\Subversion</configuration>
@@ -218,13 +582,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108000" />
+    <option name="totallyTimeSpent" value="9783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="26" y="87" width="1552" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="BPMN Editor" order="0" weight="0.3297587" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4968017" visible="true" weight="0.1802949" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4968017" visible="true" weight="0.20080322" />
       <window_info id="Structure" order="2" sideWeight="0.50319827" side_tool="true" weight="0.20442359" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -234,21 +599,21 @@
       <window_info id="Web" order="8" sideWeight="0.50319827" side_tool="true" weight="0.20442359" />
       <window_info id="JRebel" order="9" sideWeight="0.50319827" side_tool="true" weight="0.20442359" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.72386056" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4283802" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6869973" weight="0.72348994" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29291338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3266399" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3253012" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.20481928" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.31300268" side_tool="true" weight="0.72348994" />
       <window_info anchor="bottom" id="Spring" order="10" weight="0.32931727" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3266399" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.28380188" />
-      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3266399" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3261745" />
       <window_info anchor="bottom" id="Problems" order="16" show_stripe_button="false" weight="0.32931727" />
       <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" weight="0.32931727" />
       <window_info anchor="bottom" id="JRebel Executor" order="18" />
@@ -267,6 +632,133 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/PersonnelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/FileinfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/FileinfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bstable/jquery-1.12.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/CalendarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2728">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/UserinfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bstable/skin/layer.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/fonts/glyphicons-halflings-regular.woff2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-2.2.0.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/department.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/department_tail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#table#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

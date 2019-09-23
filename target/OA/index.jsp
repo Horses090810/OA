@@ -316,8 +316,8 @@
               </ul>
           </div>
       </aside>
-      <div style="float: right;position:relative;width:1357px;height:760px;margin-top: 62px;">
-          <iframe name="right" src="${pageContext.request.contextPath}/main/right.jsp" style="width:100%;height: 100%;" frameborder="0"></iframe>
+      <div style="float: right;position:relative;width:1357px;height:725px;margin-top: 62px;overflow: hidden;">
+          <iframe name="right" src="${pageContext.request.contextPath}/right.jsp" style="width:100%;height: 100%;" frameborder="0"></iframe>
       </div>
   </section>
     <script src="js/jquery.js"></script>

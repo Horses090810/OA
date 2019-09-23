@@ -17,10 +17,21 @@
     scheduleid, title, address, meetingid, bigintime, endtime, schcontent, createuser, 
     createtime, ifprivate
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultType="map">
     select 
     <include refid="Base_Column_List" />
     from schedule
     where scheduleid = #{scheduleid,jdbcType=INTEGER}
+  </select>
+
+  <insert id="addCalendar" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="scheduleid" keyColumn="scheduleid">
+        insert into schedule values (0,#{title},#{address},#{meetingid},#{begintime},#{endtime},#{schcontent},#{createuser},now(),#{ifprivate});
+    <selectKey resultType="int" order="AFTER" keyProperty="scheduleid">
+      SELECT LAST_INSERT_ID() as scheduleid
+    </selectKey>
+  </insert>
+
+  <select id="findMyCalendar" resultType="cn.entity.Schedule">
+        select * from schedule where createuser=#{createuser}
   </select>
 </mapper>
