@@ -15,4 +15,17 @@
     from precontract
     where precontractid = #{precontractid,jdbcType=INTEGER}
   </select>
+
+  <insert id="addPrecontract">
+        insert into precontract values (0,#{scheduleid},#{userid})
+  </insert>
+
+  <select id="selectByscheduleid" parameterType="java.lang.Integer" resultType="map">
+        SELECT p.*,u.`username`,d.`departname` FROM precontract p,userinfo u ,departinfo d
+WHERE u.`userid`=p.`userid` AND d.`departid`=u.`departid` AND p.`scheduleid`=#{scheduleid}
+  </select>
+
+  <delete id="delperson">
+        delete from precontract where scheduleid=#{scheduleid} and userid=#{userid}
+  </delete>
 </mapper>

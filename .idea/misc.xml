@@ -11,9 +11,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="asus" />
-  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -30,14 +27,5 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
-  </component>
-  <component name="SaveActionSettings">
-    <option name="actions">
-      <set>
-        <option value="organizeImports" />
-        <option value="reformat" />
-      </set>
-    </option>
-    <option name="configurationPath" value="" />
   </component>
 </project>
