@@ -2,6 +2,7 @@ package cn.service;
 
 import cn.entity.Precontract;
 import cn.entity.Schedule;
+import cn.util.Pagetion;
 
 import java.util.List;
 import java.util.Map;
@@ -27,4 +28,8 @@ public interface CalendarService {
     void updateCalendar(Map<String,Object> map);
 
     void delCalentar(Integer scheduleid);
+
+    List<Map<String,Object>> finddepartCalendar(Pagetion<Map<String,Object>> page);
+
+    Integer finddepartCalendarCount(Pagetion<Map<String,Object>> page);
 }

@@ -14,4 +14,5 @@ public interface PrecontractMapper {
     List<Map<String,Object>> selectByscheduleid(Integer scheduleid);
 
     void delperson(@Param("scheduleid") Integer scheduleid,@Param("userid") Integer userid);
+
 }
