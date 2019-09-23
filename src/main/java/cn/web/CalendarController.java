@@ -3,8 +3,10 @@ package cn.web;
 import cn.entity.*;
 import cn.service.CalendarService;
 import cn.service.PersonnelServiece;
+import cn.util.Pagetion;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,6 +41,7 @@ public class CalendarController {
     @Autowired
     private ServletResponse response;
 
+
     /**
      * 进入我的日程安排
      * @param model
@@ -66,6 +69,11 @@ public class CalendarController {
         return "/calendar/mycalendar";
     }
 
+    /**
+     * 添加我的日程
+     * @param map
+     * @return
+     */
     @PostMapping("addCalendar")
     public String addCalendar(@RequestParam Map<String,Object> map){
         for (String s : map.keySet()) {
@@ -88,6 +96,11 @@ public class CalendarController {
     }
 
 
+    /**
+     * 查询我的日程
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("findMyCalendar")
     //@ResponseBody
     public String findMyCalendar() throws Exception{
@@ -118,6 +131,12 @@ public class CalendarController {
     }
 
 
+    /**
+     * 查询日程详情
+     * @param groupId
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("detailsCalendar")
     public String detailsCalendar(Integer groupId) throws Exception{
         response.setContentType("text/html;charset=utf-8");
@@ -132,6 +151,12 @@ public class CalendarController {
         return "/calendar/mycalendar";
     }
 
+    /**
+     * 添加预约人
+     * @param userid
+     * @param scheduleid
+     * @return
+     */
     @RequestMapping("addperson")
     @ResponseBody
     public String addperson(Integer userid,Integer scheduleid){
@@ -139,6 +164,12 @@ public class CalendarController {
         return "add";
     }
 
+    /**
+     * 删除预约人
+     * @param userid
+     * @param scheduleid
+     * @return
+     */
     @RequestMapping("delperson")
     @ResponseBody
     public String delperson(Integer userid,Integer scheduleid){
@@ -146,6 +177,11 @@ public class CalendarController {
         return "del";
     }
 
+    /**
+     * 修改我的部门日程
+     * @param map
+     * @return
+     */
     @RequestMapping("updateCalendar")
     public String updateCalendar(@RequestParam Map<String,Object> map){
         if(map.get("ifprivate")==null){
@@ -155,9 +191,69 @@ public class CalendarController {
         return "redirect:/mycalendar.do";
     }
 
+    /**
+     * 删除我的日程
+     * @param scheduleid
+     * @return
+     */
     @RequestMapping("delCalentar")
     public String delCalentar(Integer scheduleid){
         calendarService.delCalentar(scheduleid);
         return "redirect:/mycalendar.do";
+    }
+
+    @RequestMapping("finddepartCalendar")
+    public String finddepartCalendar(Model model,@RequestParam Map<String,Object> map,String pageNo){
+
+        for (String s : map.keySet()) {
+            System.out.println(map.get(s));
+        }
+
+        Pagetion<Map<String,Object>> pagetion = new Pagetion<>();
+        if (pageNo == null || pageNo == "") {
+            pagetion.setPageNo(1);
+        } else {
+            pagetion.setPageNo(Integer.parseInt(pageNo));
+        }
+
+        pagetion.setT(map);
+
+        List<Map<String, Object>> list = calendarService.finddepartCalendar(pagetion);
+        pagetion.setList(list);
+
+        Integer count = calendarService.finddepartCalendarCount(pagetion);
+
+        pagetion.setTotle(count);
+
+        List<Branchinfo> branchinfos = personnelServiece.selectAll();
+        List<Departinfo> departAll;
+        if(map.get("branchid")==null || map.get("branchid").equals("")){
+            departAll = personnelServiece.findDepartAll();
+        }else{
+            departAll = personnelServiece.findDepartBybranchid(Integer.parseInt(map.get("branchid").toString()));
+        }
+
+        model.addAttribute("page",pagetion);
+        model.addAttribute("branchinfos",branchinfos);
+        model.addAttribute("departAll",departAll);
+        return "/calendar/departcalendar";
+    }
+
+    @RequestMapping("findDepartBybrachid")
+    @ResponseBody
+    public List<Departinfo> findDepartBybrachid(Integer branchid){
+        List<Departinfo> list;
+        if(branchid==0){
+            list=personnelServiece.findDepartAll();
+        }else{
+            list = personnelServiece.findDepartBybranchid(branchid);
+        }
+        return list;
+    }
+
+    @RequestMapping("findPerson")
+    @ResponseBody
+    public List<Map<String,Object>> findPerson(Integer scheduleid){
+        return calendarService.selectByscheduleid(scheduleid);
     }
 }

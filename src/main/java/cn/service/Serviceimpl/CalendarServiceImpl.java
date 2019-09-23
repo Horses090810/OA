@@ -5,6 +5,7 @@ import cn.dao.ScheduleMapper;
 import cn.entity.Precontract;
 import cn.entity.Schedule;
 import cn.service.CalendarService;
+import cn.util.Pagetion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -67,5 +68,17 @@ public class CalendarServiceImpl implements CalendarService {
     @Override
     public void delCalentar(Integer scheduleid) {
         scheduleMapper.delCalentar(scheduleid);
+    }
+
+    @Override
+    public List<Map<String, Object>> finddepartCalendar(Pagetion<Map<String,Object>> page) {
+        Integer pageNo=(page.getPageNo()-1)*page.getPageSize();
+        page.getT().put("pageNo",pageNo);
+        return scheduleMapper.finddepartCalendar(page);
+    }
+
+    @Override
+    public Integer finddepartCalendarCount(Pagetion<Map<String, Object>> page) {
+        return scheduleMapper.finddepartCalendarCount(page);
     }
 }
