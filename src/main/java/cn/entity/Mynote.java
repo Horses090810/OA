@@ -1,8 +1,9 @@
 package cn.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Mynote {
+public class Mynote implements Serializable {
     private Integer noteid;
 
     private String notetitle;

@@ -34,4 +34,54 @@
   <select id="findMyCalendar" resultType="cn.entity.Schedule">
         select * from schedule where createuser=#{createuser}
   </select>
+
+  <update id="updateCalendar" parameterType="map">
+        update schedule SET title=#{title},address=#{address},meetingid=#{meetingid},
+                bigintime=#{begintime},endtime=#{endtime},schcontent=#{schcontent},
+                ifprivate=#{ifprivate}
+                where scheduleid=#{scheduleid}
+  </update>
+
+  <delete id="delCalentar" parameterType="java.lang.Integer">
+        delete from schedule where scheduleid=#{scheduleid}
+  </delete>
+
+  <select id="finddepartCalendar" resultType="map">
+        SELECT s.*,u.`userid`,u.`username`,d.`departid`,d.`departname`
+        FROM `schedule` s ,userinfo u ,departinfo d
+        WHERE s.`createuser` = u.`userid` AND u.`departid` = d.`departid`
+        AND s.`ifprivate`=0
+        <if test="page.t.branchid!=null and page.t.branchid!=''">
+            and d.branchid = #{page.t.branchid}
+        </if>
+        <if test="page.t.departid!=null and page.t.departid!=''">
+              and d.departid = #{page.t.departid}
+        </if>
+        <if test="page.t.username!=null and page.t.username!=''">
+              and u.username like "%"#{page.t.username}"%"
+        </if>
+        <if test="page.t.begintime!=null and page.t.begintime!=''">
+              and s.bigintime like "%"#{page.t.begintime}"%"
+        </if>
+        limit #{page.t.pageNo},#{page.pageSize}
+  </select>
+
+    <select id="finddepartCalendarCount" resultType="java.lang.Integer">
+        SELECT count(1)
+        FROM `schedule` s ,userinfo u ,departinfo d
+        WHERE s.`createuser` = u.`userid` AND u.`departid` = d.`departid`
+        AND s.`ifprivate`=0
+        <if test="page.t.branchid!=null and page.t.branchid!=''">
+            and d.branchid = #{page.t.branchid}
+        </if>
+        <if test="page.t.departid!=null and page.t.departid!=''">
+            and d.departid = #{page.t.departid}
+        </if>
+        <if test="page.t.username!=null and page.t.username!=''">
+            and u.username like "%"#{page.t.username}"%"
+        </if>
+        <if test="page.t.begintime!=null and page.t.begintime!=''">
+            and s.bigintime like "%"#{page.t.begintime}"%"
+        </if>
+    </select>
 </mapper>
