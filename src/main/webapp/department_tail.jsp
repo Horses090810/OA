@@ -17,58 +17,52 @@
 <body style="border-radius: 8px;width: 680px;">
 <form>
 <div class="top">
-    <div>
-        <div class="top_out">
-            <table class="table">
-                <tbody>
-                <tr>
-                    <td>文件名</td>
-                    <td colspan="4">
-                    <input type="text" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>位置</td>
-                    <td colspan="4"><input type="text"></td>
-                </tr>
-                <tr>
-                    <td >创建时间</td>
-                    <td colspan="4"><samp></samp><samp>所有者<samp></samp></samp></td>
-                </tr>
-                <tr>
-                    <td>文件图标>></td>
-                    <td colspan="4">
-
-
-                    </td>
-                </tr>
-                </tbody>
-                <tr style="background-color: #0D8BBD">
-                    <td >名称</td>
-                    <td >大小（KB）</td>
-                    <td>类型</td>
-                    <td>创建日期</td>
-                    <td></td>
-                </tr>
-                <c:forEach items="${list}" var="s">
+    <form action="" method="post">
+        <div>
+            <div class="top_out">
+                <table class="table">
+                    <tbody>
                     <tr>
-                        <td>名称</td>
-                        <td>大小（KB）</td>
-                        <td>类型</td>
-                        <td>创建日期</td>
-                        <td></td>
+                        <td>文件名</td>
+                        <td colspan="4">
+                        <input type="text" required>
+                        </td>
                     </tr>
-                </c:forEach>
-                <tr>
-                    <td colspan="4">
-                        文件名：<input type="text" style="width: 220px;">
-                    </td>
-                    <td><input type="file" style="float: left"></td>
-                </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <td>位置</td>
+                        <td colspan="4"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td >创建时间</td>
+                        <td colspan="4"><samp></samp><samp style="float: right">所有者<samp></samp></samp></td>
+                    </tr>
+                    <tr style="background-color: #0D8BBD">
+                        <td style="font-size: 16px;text-align: center;">名称</td>
+                        <td style="font-size: 16px;text-align: center;">大小（KB）</td>
+                        <td style="font-size: 16px;text-align: center;">类型</td>
+                        <td style="font-size: 16px;text-align: center;">创建日期</td>
+                        <td style="font-size: 16px;text-align: center;width: 30px;"></td>
+                    </tr>
+                    <c:forEach items="${list}" var="s">
+                        <tr>
+                            <td style="font-size: 16px;text-align: center;">名称</td>
+                            <td style="font-size: 16px;text-align: center;">大小（KB）</td>
+                            <td style="font-size: 16px;text-align: center;">类型</td>
+                            <td style="font-size: 16px;text-align: center;">创建日期</td>
+                            <td style="font-size: 16px;text-align: center;"></td>
+                        </tr>
+                    </c:forEach>
+                    <tr>
+                        <td colspan="4">
+                            文件名：<input type="text" style="width: 220px;">
+                        </td>
+                        <td><input type="file" style="float: left"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
+    </form>
     <div class="notice_bot">
         <div class="l_left"><input type="checkbox" checked="checked"/>保存并关闭窗口</div>
         <div class="r_right but_p"><button class="but_save">保存</button><button class="but_close" onclick="Cancel()">关闭</button></div>

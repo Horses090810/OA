@@ -8,10 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sound.midi.Soundbank;
+import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -58,5 +61,25 @@ public class BwymVontroller {
         public  String scff(@PathVariable("id") String id){
                  mynoteService.del(id);
                 return "redirect:/bwym.do";
+        }
+        @Autowired
+        HttpServletResponse response;
+        @RequestMapping("tjbmrym")
+        @ResponseBody
+        public  List<Map> tjbmrym(HttpServletResponse resq){
+                List<Map>  list= mynoteService.find();
+                return  list;
+        }
+        @RequestMapping("tjbmryms/{id}")
+        @ResponseBody
+        public  List<Map> tjbmryms(@PathVariable("id") String id,HttpServletRequest req,HttpServletResponse resq) throws UnsupportedEncodingException {
+
+                List<Map>  list= mynoteService.finds(id);
+                return  list;
+        }
+        @RequestMapping("cx")
+        @ResponseBody
+        public List<Map> cx(Map map){
+                return  mynoteService.findTj(map);
         }
 }

@@ -11,4 +11,7 @@ public interface MynoteService {
         void add(Mynote my);
         void uq(Mynote my);
         void del(String id);
+        List<Map> find();
+        List<Map> finds(String id);
+        List<Map> findTj(Map map);
 }

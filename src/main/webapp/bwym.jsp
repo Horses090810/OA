@@ -25,9 +25,9 @@
         <h3 style="text-align: center">我的便签</h3>
     <hr>
     <a style="float: right;margin-right: 30px;" class="btn btn-default" href="/bwymId/0.do"><span class="glyphicon glyphicon-plus"></span>新增</a>
-    <div style="border: 1px solid;margin-left: 30px;width: 95%;margin-top: 10px;float: left;padding-left: 2px;">
+    <div style="border: 1px  solid;margin-left: 30px;width: 95%;margin-top: 10px;float: left;padding-left: 2px;">
         <c:forEach items="${list}" var="s">
-            <div style="width: 33.3%;float: left;margin: 0px;background-color: #9B859D;border-bottom: 1px solid;">
+            <div style="width: 33.3%;float: left;margin: 0px;background-color: #9B859D;border-bottom: 1px #CCCCCC solid;">
                 <a style="font-size: 16px;" href="/bwymId/${s.noteid}.do" >${s.notetitle}</a>
             </div>
         </c:forEach>

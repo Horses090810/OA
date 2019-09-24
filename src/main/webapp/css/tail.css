@@ -34,17 +34,13 @@ td{border: none !important;}
 
 .table tr td:nth-child(2n+1){text-align: right;font-size: 12px;width:84px;line-height: 28px;}
 
-.top td{padding: 0 3px 8px 0 !important;}
-.top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
 .top .frist_input{width: 791px !important;}
 .top select,.top input[type=text],.top input[type=password]{color: #999;text-align: left;width: 342px;height:28px;border-radius: 4px;font-size: 12px;border: 1px #ccc solid}
-.top td textarea{width: 586px;height: 70px;resize: none;border-radius: 4px;border: 1px #ccc solid}
 
 .top .td_select{width: 78px;margin-right: 2px}
 .form_area{width: 791px}
 
 ::-webkit-input-placeholder,:-ms-input-placeholder  {color:#999;}
-.table tr td:nth-child(2n+1){text-align: right;font-size: 12px;width:84px;line-height: 28px;}
 .top td{padding: 0 3px 8px 0 !important;}
 .top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
 .top .frist_input{width: 791px !important;}

@@ -317,7 +317,7 @@
           </div>
       </aside>
       <div style="float: right;position:relative;width:1357px;height:729px;margin-top: 62px;overflow: hidden;">
-          <iframe name="right" src="${pageContext.request.contextPath}/right.jsp" style="width:100%;height: 100%;" frameborder="0"></iframe>
+          <iframe name="right" src="${pageContext.request.contextPath}/bwym.do" style="width:100%;height: 100%;" frameborder="0"></iframe>
       </div>
   </section>
     <script src="js/jquery.js"></script>

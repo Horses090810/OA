@@ -82,7 +82,7 @@
             shade: 0.5,
             skin: 'layui-layer-rim',
             closeBtn: 1,
-            area: ['400px', '300px'],
+            area: ['700px', '400px'],
             content: 'department_tail.jsp'
         });
     }
