@@ -6,128 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2ef9d5-373f-4e35-a6f9-95c7fa614af0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/kqglServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/service/kqglService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/web/kqglController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tj.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/BwymVontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/BwymVontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/AccessoryfileMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/AccessoryfileMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/BranchinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/BranchinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/DepartinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/DepartinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FiletypeinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FiletypeinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/LoginlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/LoginlogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ManualsignMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ManualsignMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MeetinginfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MeetinginfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessagetouserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessagetouserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessagetypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MessagetypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MynoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/MynoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/OperatelogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/OperatelogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/PrecontractMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ReadcommonmessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ReadcommonmessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/RoleinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/RoleinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/RolerightMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/RolerightMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/ScheduleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/SysfunMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/SysfunMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserstateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/UserstateMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/WorktimeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/WorktimeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Accessoryfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Accessoryfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Branchinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Branchinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Departinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Departinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Fileinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Fileinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Filetypeinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Filetypeinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Loginlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Loginlog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Manualsign.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Manualsign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Meetinginfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Meetinginfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Messagetouser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Messagetouser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Messagetype.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Messagetype.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Mynote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Mynote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Operatelog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Operatelog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Precontract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Precontract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Readcommonmessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Readcommonmessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Roleinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Roleinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Roleright.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Roleright.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Sysfun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Sysfun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Userstate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Userstate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Worktime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Worktime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/PersonnelServiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/PersonnelServiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/Serviceimpl/PersonnelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/Serviceimpl/PersonnelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/Serviceimpl/UserinfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/Serviceimpl/UserinfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/UserinfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/service/UserinfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/util/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/util/MyRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/util/Pagetion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/util/Pagetion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/FileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/FileUpload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/PersonnelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/PersonnelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/AccessoryfileMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/AccessoryfileMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/BranchinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/BranchinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/DepartinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/DepartinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FiletypeinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FiletypeinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/LoginlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/LoginlogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ManualsignMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/ManualsignMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MeetinginfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/MeetinginfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/MessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetouserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/MessagetouserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MessagetypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/MessagetypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/MynoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/MynoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/OperatelogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/OperatelogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/PrecontractMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/PrecontractMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ReadcommonmessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/ReadcommonmessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RoleinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/RoleinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/RolerightMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/RolerightMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/ScheduleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/SysfunMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/SysfunMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/UserinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/UserstateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/UserstateMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/WorktimeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/WorktimeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Accessoryfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Accessoryfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Branchinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Branchinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Departinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Departinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Fileinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Fileinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Filetypeinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Filetypeinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Loginlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Loginlog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Manualsign.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Manualsign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Meetinginfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Meetinginfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Messagetouser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Messagetouser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Messagetype.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Messagetype.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Mynote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Mynote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Operatelog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Operatelog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Precontract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Precontract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Readcommonmessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Readcommonmessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Roleinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Roleinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Roleright.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Roleright.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Sysfun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Sysfun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Userstate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Userstate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Worktime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Worktime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/CalendarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/CalendarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/PersonnelServiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/PersonnelServiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/CalendarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/CalendarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/PersonnelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/PersonnelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/UserinfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/Serviceimpl/UserinfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/service/UserinfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/service/UserinfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/util/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/util/MyRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/util/Pagetion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/util/Pagetion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/CalendarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/CalendarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/FileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/FileUpload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/PersonnelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/PersonnelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shiro-ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shiro-ehcache.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c2ef9d5-373f-4e35-a6f9-95c7fa614af0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +262,7 @@
       <workItem from="1568795964063" duration="68000" />
       <workItem from="1568796263030" duration="16000" />
       <workItem from="1569237698545" duration="3751000" />
-      <workItem from="1569283839971" duration="8310000" />
+      <workItem from="1569283839971" duration="8599000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -392,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569219329985</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一次">
+      <created>1569306104915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569306104915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +299,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次 ssw" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次 ssw" />
+    <MESSAGE value="第一次" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次" />
   </component>
   <component name="masterDetails">
     <states>
