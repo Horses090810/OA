@@ -36,12 +36,14 @@ public class BwymVontroller {
                 req.setAttribute("list",list);
                 return  "/bwym";
         }
+
         @RequestMapping("bwymId/{id}")
         public  String bwymId(@PathVariable("id") String id,HttpServletRequest req){
                 Map list =mynoteService.findBwId(id);
                 req.setAttribute("list",list);
                 return "/bwxqym";
         }
+
         @RequestMapping("bwxqym")
         public  String bwxqym( Mynote my,HttpServletRequest req,HttpSession ses){
 
