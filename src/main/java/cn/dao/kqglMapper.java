@@ -11,6 +11,16 @@ public interface kqglMapper {
 
     public  Integer selTotal();
 
+    public  List<Map> inquire(@Param("page") int page,@Param("limit") int limit,@Param("map")Map condition);
 
+    public List<Map> showAll1(@Param("page") int page,@Param("limit") int limit);
+
+    public  Integer selTotal1();
+
+    public  List<Map> inquire1(@Param("page") int page,@Param("limit") int limit,@Param("map")Map condition);
+
+    public List<Map> selectAll();
+
+    public List<Map> selectqd(@Param("name") String name);
 
 }

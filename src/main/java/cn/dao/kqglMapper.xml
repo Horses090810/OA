@@ -18,4 +18,72 @@ JOIN userinfo u ON m.userid =u.userid
 JOIN departinfo d ON u.departid=d.departid
 JOIN branchinfo b ON b.branchid=d.branchid
     </select>
+
+    <select id="inquire" resultType="map">
+        SELECT m.signid,u.username,m.signtime,m.signtag,m.signdesc,d.departname,b.branchshortname FROM manualsign m
+        JOIN userinfo u ON m.userid =u.userid
+        JOIN departinfo d ON u.departid=d.departid
+        JOIN branchinfo b ON b.branchid=d.branchid
+        <where>
+            DATE(m.signtime)=DATE(NOW())
+            <if test="map.name!=null and map.name!='' ">
+                and u.username like '%${map.name}%'
+            </if>
+            <if test="map.depid!=null and map.depid!=''">
+                and  d.departname like '%${map.depid}%'
+            </if>
+            <if test="map.geender!=null and map.geender!=''">
+                and  b.branchshortname like '%${map.geender}%'
+            </if>
+        </where>
+        limit #{page},#{limit}
+    </select>
+
+    <!--分页-->
+    <select id="showAll1" resultType="map">
+        SELECT m.signid,u.username,m.signtime,m.signtag,m.signdesc,d.departname,b.branchshortname FROM manualsign m
+JOIN userinfo u ON m.userid =u.userid
+JOIN departinfo d ON u.departid=d.departid
+JOIN branchinfo b ON b.branchid=d.branchid
+WHERE DATE(m.signtime)=DATE(NOW()) limit #{page},#{limit}
+    </select>
+
+    <!--查询总行数-->
+    <select id="selTotal1" resultType="Integer">
+     SELECT COUNT(*) FROM manualsign m
+JOIN userinfo u ON m.userid =u.userid
+JOIN departinfo d ON u.departid=d.departid
+JOIN branchinfo b ON b.branchid=d.branchid
+    </select>
+
+    <select id="inquire1" resultType="map">
+        SELECT m.signid,u.username,m.signtime,m.signtag,m.signdesc,d.departname,b.branchshortname FROM manualsign m
+        JOIN userinfo u ON m.userid =u.userid
+        JOIN departinfo d ON u.departid=d.departid
+        JOIN branchinfo b ON b.branchid=d.branchid
+        <where>
+            DATE(m.signtime)=DATE(NOW())
+            <if test="map.name!=null and map.name!='' ">
+                and u.username like '%${map.name}%'
+            </if>
+            <if test="map.depid!=null and map.depid!=''">
+                and  d.departname like '%${map.depid}%'
+            </if>
+            <if test="map.geender!=null and map.geender!=''">
+                and  b.branchshortname like '%${map.geender}%'
+            </if>
+        </where>
+        limit #{page},#{limit}
+    </select>
+
+    <select id="selectAll" parameterType="map">
+        SELECT * FROM manualsign m
+        JOIN userinfo u ON m.userid =u.userid
+        JOIN departinfo d ON u.departid=d.departid
+        JOIN branchinfo b ON b.branchid=d.branchid
+    </select>
+
+    <select id="selectqd" parameterType="map">
+        SELECT * FROM manualsign WHERE userid IN (SELECT userid FROM userinfo WHERE username=${name})
+    </select>
 </mapper>

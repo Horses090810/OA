@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-<h3>你当前的位置是：记录调查</h3><br><br><br>
+<h3>你当前的位置是：历史调查</h3><br><br><br>
 
 <div class="demoTable">
     名称：
@@ -51,29 +51,20 @@
 
         table.render({
             elem: '#mytab'
-            , url: '${pageContext.request.contextPath}/show.do'
+            , url: '${pageContext.request.contextPath}/show1.do'
             , type: 'post'
             , cols: [[
-                    {field: 'signid', title: "编号", width: 200}
+                {field: 'signid', title: "编号", width: 200}
                 , {field: 'username', title: "名称", width: 200}
-                , {field: 'signtime', width: 200, title: '打卡时间',templet:function(d) {return util.toDateString(d.signtime,"HH:mm:ss");}}
-                , {field: 'signtag', width: 200, title: '标记'}
+                , {field: 'signtime', width: 200, title: '出勤率',templet:function(d) {return util.toDateString(d.signtime,"HH:mm:ss");}}
+                , {field: 'signtag', width: 200, title: ''}
                 , {field: 'signdesc', width: 200, title: '备注'}
                 , {field: 'departname', width: 200, title: '部门'}
                 , {field: 'branchshortname',width: 150,title: '机构'}
-            ]]   ,done: function(res, curr, count) {
-                $("[data-field='signtag']").children().each(function () {
-                    if ($(this).text() == 1) {
-                        $(this).text("签到")
-                    }
-                    else if ($(this).text() == 2) {
-                        $(this).text("签退")
-                    }
-                });
-            }
+            ]]
             , page: true
             , id: 'table'
-            ,limits: [3,6, 9 ]
+            ,limits: [3,6,9]
             ,limit:3
             ,response: {
                 code: 'code',// 对应 code
@@ -88,7 +79,7 @@
                 var geender=$('#sex');
                 //执行重载
                 table.reload('table', {
-                    url: '${pageContext.request.contextPath}/inquire.do'
+                    url: '${pageContext.request.contextPath}/inquire1.do'
                     ,page: {
                         curr: 1 //重新从第 1 页开始
                     }

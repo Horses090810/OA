@@ -8,4 +8,19 @@ public interface kqglService {
     public List<Map> showAll(int page, int limit);
 
     public  Integer selTotal();
+
+    List<Map> inquire(int page, int limit, Map condition);
+
+
+
+    public List<Map> showAll1(int page, int limit);
+
+    public  Integer selTotal1();
+
+    List<Map> inquire1(int page, int limit, Map condition);
+
+
+    List<Map> selectAll();
+
+    List<Map> selectqd(String name);
 }
