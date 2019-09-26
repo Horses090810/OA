@@ -54,13 +54,14 @@
             , url: '${pageContext.request.contextPath}/show1.do'
             , type: 'post'
             , cols: [[
-                {field: 'signid', title: "编号", width: 200}
-                , {field: 'username', title: "名称", width: 200}
-                , {field: 'signtime', width: 200, title: '出勤率',templet:function(d) {return util.toDateString(d.signtime,"HH:mm:ss");}}
-                , {field: 'signtag', width: 200, title: ''}
-                , {field: 'signdesc', width: 200, title: '备注'}
-                , {field: 'departname', width: 200, title: '部门'}
-                , {field: 'branchshortname',width: 150,title: '机构'}
+                {field: 'signid', title: "编号", width: 160}
+                , {field: 'username', title: "名称", width: 160}
+                , {field: 'signtime', width: 160, title: '出勤率',templet:function(d) {return util.toDateString(d.signtime,"HH:mm:ss");}}
+                , {field: 'signtag', width: 160, title: '迟到'}
+                , {field: 'signdesc', width: 160, title: '早退'}
+                , {field: 'signdesc', width: 160, title: '旷工'}
+                , {field: 'departname', width: 160, title: '部门'}
+                , {field: 'branchshortname',width: 160,title: '机构'}
             ]]
             , page: true
             , id: 'table'

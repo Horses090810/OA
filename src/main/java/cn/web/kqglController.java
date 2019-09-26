@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -118,5 +119,35 @@ public class kqglController {
         return kqglService.selectqd(name);
     }
 
+    @RequestMapping(value = "addqd",method= RequestMethod.POST,produces="text/plain;charset=utf-8")
+    @ResponseBody
+    public  String addqd(@RequestParam("name") String name,@RequestParam("bq") String bq) {
+        System.out.println("321");
+        Map trem = new HashMap();
+        trem.put("name", name);
+        trem.put("bq",bq);
+        boolean flag = kqglService.addqd(trem);
+
+        if (flag==true){
+            return "添加成功";
+        }else {
+            return "添加失败";
+        }
+    }
+
+    @RequestMapping(value = "addqt",method= RequestMethod.POST,produces="text/plain;charset=utf-8")
+    @ResponseBody
+    public  String addqt(@RequestParam("name") String name,@RequestParam("bq") String bq) {
+        System.out.println("123");
+        Map trem = new HashMap();
+        trem.put("name", name);
+        trem.put("bq",bq);
+        boolean flag = kqglService.addqt(trem);
+        if (flag==true){
+            return "添加成功";
+        }else {
+            return "添加失败";
+        }
+    }
 
 }

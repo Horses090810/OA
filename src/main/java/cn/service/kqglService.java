@@ -23,4 +23,10 @@ public interface kqglService {
     List<Map> selectAll();
 
     List<Map> selectqd(String name);
+
+
+    public  boolean  addqd( Map term);
+
+
+    public  boolean  addqt( Map term);
 }

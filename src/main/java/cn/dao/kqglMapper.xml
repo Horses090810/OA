@@ -86,4 +86,11 @@ JOIN branchinfo b ON b.branchid=d.branchid
     <select id="selectqd" parameterType="map">
         SELECT * FROM manualsign WHERE userid IN (SELECT userid FROM userinfo WHERE username=${name})
     </select>
+
+    <insert id="addqd" parameterType="map" >
+        INSERT manualsign VALUES (NULL,(SELECT userid FROM userinfo WHERE username=#{map.name}),NOW(),#{map.bq},1 )
+    </insert>
+    <insert id="addqt" parameterType="map" >
+        INSERT manualsign VALUES (NULL,(SELECT userid FROM userinfo WHERE username=#{map.name}),NOW(),#{map.bq},2 )
+    </insert>
 </mapper>

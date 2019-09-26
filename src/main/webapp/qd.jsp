@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Title</title>${usernfo.name}
     <link rel="stylesheet"
           href="${pageContext.request.contextPath}/layui/css/layui.css">
     <script src="${pageContext.request.contextPath}/layui/layui.all.js"></script>
@@ -22,14 +22,14 @@
 
         签到日期:  <% Timestamp time =  new Timestamp(System.currentTimeMillis()); out.println(time.toString()); %>
 
-        <input type="button" onclick="window.location.href='cn'">
         <%--        --%>
         <div class="layui-form-item layui-form-text">
-            <label class="layui-form-label">签到备注</label>
-            <input type="button" value="签到" onclick="window.location.href('qd.do')">
-            <input type="button" value="签退" onclick="window.location.href('.do')">
+            <input type="button" value="签到" id="addqd" >
+            <input type="button" value="签退" id="addqt" >
+            <label class="layui-form-label">签到备注</label> <!-- onclick="window.location.href='/qt.do'-->
+<%--            {pageContext.request.contextPath}/sel/{{d.emp_id}}.do--%>
             <div class="layui-input-block">
-                <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                <textarea name="bq" id="bq" placeholder="请输入内容" class="layui-textarea"></textarea>
             </div>
         </div>
     </div>
@@ -42,6 +42,21 @@
         window.setTimeout("gettime()",1000);
     }
     window.οnlοad=gettime;
+    $(function () {
+        $("#add").click(function () {
+            $.ajax({
+                url:
+                    '${pageContext.request.contextPath}/addqd.do',
+                type: 'POST',
+                data:{name:$("#name").val(),bq:$("#bq").val()},
+                success: function (data) {
+                    if (data == '添加成功') {
+                     alert(data);
+                    }
+                }
+            });
+        })
+    })
 </script>                   
 
 <head>
