@@ -122,14 +122,14 @@ public class kqglController {
     @RequestMapping(value = "addqd",method= RequestMethod.POST,produces="text/plain;charset=utf-8")
     @ResponseBody
     public  String addqd(@RequestParam("name") String name,@RequestParam("bq") String bq) {
-        System.out.println("321");
+
         Map trem = new HashMap();
         trem.put("name", name);
         trem.put("bq",bq);
         boolean flag = kqglService.addqd(trem);
 
         if (flag==true){
-            return "添加成功";
+            return "签到成功";
         }else {
             return "添加失败";
         }
@@ -144,7 +144,7 @@ public class kqglController {
         trem.put("bq",bq);
         boolean flag = kqglService.addqt(trem);
         if (flag==true){
-            return "添加成功";
+            return "签退成功";
         }else {
             return "添加失败";
         }

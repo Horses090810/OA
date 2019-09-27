@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2ef9d5-373f-4e35-a6f9-95c7fa614af0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/kqglServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/kqglServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/kqglService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/kqglService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/kqglController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/kqglController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/qd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tj.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +52,13 @@
         <item name="MySQL for 5.1 - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="myoffice: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL for 5.1 - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="myoffice: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="manualsign: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -162,7 +174,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.47" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -290,12 +302,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@345f2345" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -324,7 +331,7 @@
       <workItem from="1569369117931" duration="2621000" />
       <workItem from="1569374103290" duration="867000" />
       <workItem from="1569458256476" duration="2456000" />
-      <workItem from="1569572472965" duration="1038000" />
+      <workItem from="1569572472965" duration="5049000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -361,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569458328035</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="第一次">
+      <created>1569573577122</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569573577123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

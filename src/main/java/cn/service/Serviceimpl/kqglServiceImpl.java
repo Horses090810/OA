@@ -68,7 +68,7 @@ public class kqglServiceImpl implements kqglService {
 
     @Override
     public boolean  addqt(Map term) {
-        if (kqglMapper.addqd(term)>0){
+        if (kqglMapper.addqt(term)>0){
             return true;
         }else {
             return  false;

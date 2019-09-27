@@ -54,7 +54,7 @@
             , url: '${pageContext.request.contextPath}/show.do'
             , type: 'post'
             , cols: [[
-                    {field: 'signid', title: "编号", width: 200}
+                  {field: 'signid', title: "编号", width: 200}
                 , {field: 'username', title: "名称", width: 200}
                 , {field: 'signtime', width: 200, title: '打卡时间',templet:function(d) {return util.toDateString(d.signtime,"HH:mm:ss");}}
                 , {field: 'signtag', width: 200, title: '标记'}

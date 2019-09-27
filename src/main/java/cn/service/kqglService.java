@@ -29,4 +29,5 @@ public interface kqglService {
 
 
     public  boolean  addqt( Map term);
+
 }

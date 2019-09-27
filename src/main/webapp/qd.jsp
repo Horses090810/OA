@@ -15,14 +15,13 @@
     <script src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-${usernfo.name}
+<%--名称：${userinfo.name}--%>
 <div class="layui-card">
     <div class="layui-card-header">签到,签退</div>
     <div class="layui-card-body">
 
         签到日期:  <% Timestamp time =  new Timestamp(System.currentTimeMillis()); out.println(time.toString()); %>
-
-        <input type="hidden" name="name" id="name" value="${userfo.name}">
+        <input type="hidden" name="name" id="name" value="${userinfo.getUsername()}">
         <%--        --%>
         <div class="layui-form-item layui-form-text">
             <input type="button" value="签到" id="addqd" >
@@ -45,21 +44,34 @@ ${usernfo.name}
     window.οnlοad=gettime;
     $(function () {
         $("#addqd").click(function () {
-
-
             $.ajax({
 
                 url:
                     '${pageContext.request.contextPath}/addqd.do',
                 type: 'POST',
-                data:{name:$("#name"),bq:$("#bq").val()},
+                data:{name:$("#name").val(),bq:$("#bq").val()},
                 success: function (data) {
-                    if (data == '添加成功') {
-                     alert(data);
+                    if (data == '签到成功') {
+                        alert(data);
                     }
                 }
             });
         })
+        ,$("#addqt").click(function () {
+            $.ajax({
+
+                url:
+                    '${pageContext.request.contextPath}/addqt.do',
+                type: 'POST',
+                data:{name:$("#name").val(),bq:$("#bq").val()},
+                success: function (data) {
+                    if (data == '签退成功') {
+                        alert(data);
+                    }
+                }
+            });
+        })
+
     })
 </script>                   
 
