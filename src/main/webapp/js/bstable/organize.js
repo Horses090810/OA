@@ -96,35 +96,49 @@ function resetTree() {
 
 function OnClick(event, treeId, treeNode) {
     $(".dropdown_select").val(treeNode.name);
+    $('#xz').attr("r", treeNode.fileid);
+    $('#id').val(treeNode.fileid);
+    $('.find_input').val(treeNode.filepath + "\\" + treeNode.name);
     wjzjff(treeNode.fileid);
-    $('#xz').attr("r",treeNode.fileid);
-    $('.find_input').val(treeNode.filepath);
+
+
+}
+
+function scff(s) {
+    alert(s);
+    location.href = "scffss/" + s + ".do";
+}
+
+function tjff() {
+    alert("权限不足，请联系管理员或者所有者！！！");
 }
 
 function wjzjff(id) {
     $.post("findWjId.do", {"id": id}, function (data) {
-        var s = [];
-        s = eval("(" + data + ")");
+
         $('.table tbody').html("");
-        if (s.length == 0) {
-            $('.table tbody').html('<tr class="no-records-found"><td content="8">没有找到匹配的记录</td></tr>');
+        if (data.length == 0) {
+            $('.table tbody').html('<tr class="no-records-found"><td colspan="8">没有找到匹配的记录</td></tr>');
         }
         //'<tr class="no-records-found"><td>s</td><td>d</td> <td>s</td></tr>'
-        $.each(s, function (i, g) {
-            $('.table tbody').append('<tr data-index="' + i + '"><td style="text-align: center; vertical-align: middle; ">' + (i + 1)
+        $.each(data, function (i, g) {
+            $('.table tbody').append('<tr data-index="' + i + '"><td style="text-align: center; vertical-align: middle; "><img src="/img/' + g.filetypeimage + '" style="width: 30px;height: 30px" alt="">'
                 + '</td style="text-align: center; vertical-align: middle; "> <td style="text-align: center; vertical-align: middle; ">' + g.filename + '</td><td style="text-align: center; vertical-align: middle; ">' + g.filetypename + '</td>' +
                 '<td style="text-align: center; vertical-align: middle; ">' + g.remark + '</td><td style="text-align: center; vertical-align: middle; ">' + g.fileowner + '</td></td><td>' + g.createdate + '</td>' +
-                '<td style="text-align: center; vertical-align: middle; "><a class="btn btn-default" onclick="return xqff('+g.fileid+')"><span class="glyphicon glyphicon-pencil" ></span></a></td>' +
-                '<td style="text-align: center; vertical-align: middle; ">'+(userinfoid==1?'<a class="btn btn-default" onclick="scff('+g.fileid+')"><span class="glyphicon glyphicon-remove" ></span></a>':userinfo==g.username?'<a class="btn btn-default" onclick="scff('+g.fileid+')"><span class="glyphicon glyphicon-remove" onclick="scff('+g.fileid+')"></span></a>':'')+'</td>' +
+                '<td style="text-align: center; vertical-align: middle; "><a class="btn btn-default" onclick="return ' + (g.filetype == 1 ? "add_departments(" + g.fileid + ")" : "add_department(" + g.fileid + ")") + '"><span ' + (g.filetype == 1 ? "class=\"glyphicon glyphicon-folder-open\"" : "class=\"glyphicon glyphicon-list\"") + ' ></span></a></td>' +
+                '<td style="text-align: center; vertical-align: middle; "><a class="btn btn-default"' + (userinfoid == 1 ? "onclick=\"scff(" + g.fileid + ")\"" : userinfo == g.fileowner ? "onclick=\"scff(" + g.fileid + ")\"" : "onclick=\"tjff()\"") + '><span class="glyphicon glyphicon-remove" ></span></a></td>' +
                 '</tr>');
         })
     })
 
 }
+
+
 function xqff(s) {
     alert(s);
     return false;
 }
+
 var zTree, rMenu;
 $(document).ready(function () {
     $.fn.zTree.init($("#treeDemo"), setting, zNodes);

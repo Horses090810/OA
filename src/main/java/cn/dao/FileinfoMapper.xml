@@ -23,10 +23,87 @@
     </select>
     <!--查询文件-->
     <select id="findWj" resultType="map">
-      SELECT fileid ,`filename` `name`,parentid id,filepath  FROM fileinfo WHERE `parentid`=#{id} and filetype=1
+      SELECT fileid ,`filename` `name`,parentid id,filepath  FROM fileinfo WHERE `parentid`=#{id} and filetype=1 and ifdelete=0
     </select>
     <!--查询id文件-->
     <select id="findIdWj" resultType="map">
-      SELECT * FROM filetypeinfo fi,`fileinfo` f WHERE f.`filetype`=fi.`filetypeid` and `parentid`=#{id}
+      SELECT * FROM filetypeinfo fi,`fileinfo` f WHERE f.`filetype`=fi.`filetypeid` and f.`parentid`=#{id} and f.ifdelete=0
+    </select>
+    <select id="findIdWjs" resultType="map">
+      SELECT * FROM filetypeinfo fi,`fileinfo` f WHERE f.`filetype`=fi.`filetypeid` and `fileid`=#{id}
+</select>
+    <select id="findId" resultType="map">
+        SELECT * FROM `fileinfo` WHERE `fileid`=#{id}
+    </select>
+    <select id="findFjId" resultType="map">
+        SELECT * FROM `accessoryfile` a,`filetypeinfo` f WHERE (a.fileid=#{id} or a.fileid is null ) AND f.`filetypeid`=a.`accessorytype`
+    </select>
+    <insert id="add">
+INSERT  `fileinfo`  VALUE(0,#{filename},#{filetype},#{remark},#{fileowner},#{createdate},#{parentid},#{filepath},0)
+    </insert>
+    <update id="up">
+UPDATE `fileinfo` f SET f.`filename`=#{filename},f.`filetype`=#{filetype},f.`remark`=#{remark} where f.`fileid`=#{fileid}
+    </update>
+    <select id="findFu" resultType="map">
+SELECT * FROM `filetypeinfo` where filetypeid!=1
+    </select>
+    <insert id="addFu">
+INSERT `accessoryfile` VALUE(0,#{fileid},#{accessoryname},#{accessorysize},#{accessorytype},#{createdate},#{accessorypath})
+    </insert>
+    <delete id="del">
+        DELETE FROM accessoryfile  WHERE fileid IS NULL
+    </delete>
+    <update id="upId">
+        update`accessoryfile` a set a.fileid=#{id} WHERE a.fileid is null
+    </update>
+    <select id="findZh" resultType="string">
+        SELECT fileid FROM `fileinfo` ORDER  BY fileid DESC LIMIT 0,1
+    </select>
+    <update id="upAcId">
+        UPDATE `accessoryfile` SET fileid=fileid*1000 WHERE accessoryid=#{id}
+    </update>
+    <delete id="delId">
+        DELETE FROM accessoryfile  WHERE fileid  LIKE '%000%'
+    </delete>
+    <update id="upIdAc">
+  UPDATE `accessoryfile` SET fileid=`fileid`/1000 WHERE fileid  LIKE '%000%'
+    </update>
+    <update id="delFId">
+        UPDATE `fileinfo` SET ifdelete=1 WHERE fileid=#{id}
+    </update>
+
+    <select id="findHsz" resultType="map">
+        SELECT * FROM `fileinfo` f,`filetypeinfo` f1 WHERE f.`filetype`=f1.`filetypeid` AND f.`ifdelete`=1
+    </select>
+    <update id="upHyId">
+        update fileinfo set ifdelete=0 where fileid=#{id}
+    </update>
+    <delete id="delHyId">
+        DELETE FROM fileinfo WHERE fileid=#{id}
+    </delete>
+    <select id="sel" resultType="map">
+        SELECT f.`fileid` FROM `fileinfo` f WHERE  f.`parentid`=#{id}
+    </select>
+    <select id="findTj" resultType="map">
+        SELECT * FROM `fileinfo` f LEFT JOIN `filetypeinfo` f1 ON f.`filetype`=f1.`filetypeid` LEFT JOIN `accessoryfile`
+        a ON a.`fileid`=f.`fileid`
+        <where>
+            f.ifdelete=0
+            <if test="name!=''">
+                AND f.`filename` LIKE '%${name}%'
+            </if>
+            <if test="fj!=''">
+                AND a.`accessoryname` LIKE '%${fj}%'
+            </if>
+            <if test="xm!=''">
+                AND f.`fileowner` LIKE '%${xm}%'
+            </if>
+            <if test="xsj!=''">
+                AND f.`createdate`>=#{xsj}
+            </if>
+            <if test="dsj!=''">
+                AND f.`createdate`&lt; #{dsj}
+            </if>
+        </where>
     </select>
 </mapper>

@@ -19,18 +19,34 @@
 </script>
 <head>
     <title></title>
+    <link href="js/bstable/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="js/bstable/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="js/bstable/zTreeStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="js/bstable/table.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    当前位置：我的便签
-        <h3 style="text-align: center">我的便签</h3>
-    <hr>
-    <a style="float: right;margin-right: 30px;" class="btn btn-default" href="/bwymId/0.do"><span class="glyphicon glyphicon-plus"></span>新增</a>
-    <div style="border: 1px  solid;margin-left: 30px;width: 95%;margin-top: 10px;float: left;padding-left: 2px;">
-        <c:forEach items="${list}" var="s">
-            <div style="width: 33.3%;float: left;margin: 0px;background-color: #9B859D;border-bottom: 1px #CCCCCC solid;">
-                <a style="font-size: 16px;" href="/bwymId/${s.noteid}.do" >${s.notetitle}</a>
-            </div>
-        </c:forEach>
-    </div>
+当前位置：我的便签
+<h3 style="text-align: center">我的便签</h3>
+<hr>
+<a style="float: right;margin-right: 30px;" class="btn btn-default" href="/bwymId/0.do"><span
+        class="glyphicon glyphicon-plus"></span>新增</a>
+<table style="margin-left: 30px;"
+       class="table table-condensed table-striped table-responsive table-bordered">
+
+    <c:forEach items="${list}" var="s" varStatus="d">
+        <c:if test="${d.count%4==0 or d.count==1}">
+            <tr>
+        </c:if>
+        <td>
+
+            <a style="font-size: 16px;" href="/bwymId/${s.noteid}.do">${s.notetitle}</a>
+
+        </td>
+        <c:if test="${d.count%3==0 }">
+            </tr>
+        </c:if>
+    </c:forEach>
+
+</table>
 </body>
 </html>

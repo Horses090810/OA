@@ -8,9 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
+
+
+<script>
+    var index = parent.layer.getFrameIndex(window.name);
+    parent.layer.close(index);
+</script>
 <body>
-$END$
+
 </body>
 </html>

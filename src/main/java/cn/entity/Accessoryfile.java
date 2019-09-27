@@ -1,75 +1,93 @@
 package cn.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Accessoryfile {
-    private Integer accessoryid;
+public class Accessoryfile implements Serializable {
+  private Integer accessoryid;
 
-    private Integer fileid;
+  private Integer fileid;
 
-    private String accessoryname;
+  private String accessoryname;
 
-    private Integer accessorysize;
+  private Integer accessorysize;
 
-    private Integer accessorytype;
+  private Integer accessorytype;
 
-    private Date createdate;
+  private Date createdate;
 
-    private String accessorypath;
+  private String accessorypath;
 
-    public Integer getAccessoryid() {
-        return accessoryid;
-    }
+  public Integer getAccessoryid() {
+    return accessoryid;
+  }
 
-    public void setAccessoryid(Integer accessoryid) {
-        this.accessoryid = accessoryid;
-    }
+  public Accessoryfile(
+      Integer accessoryid,
+      Integer fileid,
+      String accessoryname,
+      Integer accessorysize,
+      Integer accessorytype,
+      Date createdate,
+      String accessorypath) {
+    this.accessoryid = accessoryid;
+    this.fileid = fileid;
+    this.accessoryname = accessoryname;
+    this.accessorysize = accessorysize;
+    this.accessorytype = accessorytype;
+    this.createdate = createdate;
+    this.accessorypath = accessorypath;
+  }
 
-    public Integer getFileid() {
-        return fileid;
-    }
+  public void setAccessoryid(Integer accessoryid) {
+    this.accessoryid = accessoryid;
+  }
 
-    public void setFileid(Integer fileid) {
-        this.fileid = fileid;
-    }
+  public Integer getFileid() {
+    return fileid;
+  }
 
-    public String getAccessoryname() {
-        return accessoryname;
-    }
+  public void setFileid(Integer fileid) {
+    this.fileid = fileid;
+  }
 
-    public void setAccessoryname(String accessoryname) {
-        this.accessoryname = accessoryname == null ? null : accessoryname.trim();
-    }
+  public String getAccessoryname() {
+    return accessoryname;
+  }
 
-    public Integer getAccessorysize() {
-        return accessorysize;
-    }
+  public void setAccessoryname(String accessoryname) {
+    this.accessoryname = accessoryname == null ? null : accessoryname.trim();
+  }
 
-    public void setAccessorysize(Integer accessorysize) {
-        this.accessorysize = accessorysize;
-    }
+  public Integer getAccessorysize() {
+    return accessorysize;
+  }
 
-    public Integer getAccessorytype() {
-        return accessorytype;
-    }
+  public void setAccessorysize(Integer accessorysize) {
+    this.accessorysize = accessorysize;
+  }
 
-    public void setAccessorytype(Integer accessorytype) {
-        this.accessorytype = accessorytype;
-    }
+  public Integer getAccessorytype() {
+    return accessorytype;
+  }
 
-    public Date getCreatedate() {
-        return createdate;
-    }
+  public void setAccessorytype(Integer accessorytype) {
+    this.accessorytype = accessorytype;
+  }
 
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
-    }
+  public Date getCreatedate() {
+    return createdate;
+  }
 
-    public String getAccessorypath() {
-        return accessorypath;
-    }
+  public void setCreatedate(Date createdate) {
+    this.createdate = createdate;
+  }
 
-    public void setAccessorypath(String accessorypath) {
-        this.accessorypath = accessorypath == null ? null : accessorypath.trim();
-    }
+  public String getAccessorypath() {
+    return accessorypath;
+  }
+
+  public void setAccessorypath(String accessorypath) {
+    this.accessorypath = accessorypath == null ? null : accessorypath.trim();
+  }
 }
