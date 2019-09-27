@@ -9,6 +9,7 @@
     <list default="true" id="0aafff74-05a3-4ca4-a4a2-c2c8396feefb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="D:\IDEA\xm\xm\OA\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,7 @@
           <entry key="java" value="3670" />
           <entry key="js" value="365" />
           <entry key="jsp" value="4838" />
-          <entry key="txt" value="8" />
+          <entry key="txt" value="11" />
           <entry key="xml" value="520" />
         </counts>
       </usages-collector>
@@ -126,7 +127,7 @@
           <entry key="JAVA" value="3670" />
           <entry key="JSP" value="4838" />
           <entry key="JavaScript" value="364" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="SQL" value="16" />
           <entry key="XML" value="504" />
         </counts>
@@ -165,8 +166,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="150">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -422,13 +423,6 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -442,7 +436,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569585257013" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569585490260" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -596,7 +590,7 @@
       <workItem from="1569321120755" duration="4000000" />
       <workItem from="1569370748939" duration="760000" />
       <workItem from="1569373846365" duration="61899000" />
-      <workItem from="1569558541215" duration="12885000" />
+      <workItem from="1569558541215" duration="13149000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -661,18 +655,39 @@
       <option name="project" value="LOCAL" />
       <updated>1569585096604</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="444">
+      <created>1569585180909</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585180909</updated>
+    </task>
+    <task id="LOCAL-00011" summary="444">
+      <created>1569585199017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585199017</updated>
+    </task>
+    <task id="LOCAL-00012" summary="444">
+      <created>1569585295694</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585295694</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117996000" />
+    <option name="totallyTimeSpent" value="118260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
       <window_info id="BPMN Editor" order="0" weight="0.3297587" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.796" visible="true" weight="0.18632708" />
-      <window_info id="Structure" order="2" sideWeight="0.204" side_tool="true" visible="true" weight="0.18632708" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.7959732" visible="true" weight="0.18632708" />
+      <window_info id="Structure" order="2" sideWeight="0.20402685" side_tool="true" weight="0.18632708" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
@@ -689,11 +704,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3266399" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3253012" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.38739946" side_tool="true" visible="true" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.38873994" side_tool="true" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Spring" order="10" weight="0.32931727" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3266399" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.61260056" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.61126006" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.2818792" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3261745" />
       <window_info anchor="bottom" id="Problems" order="16" show_stripe_button="false" weight="0.32931727" />
@@ -716,6 +731,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -724,7 +765,9 @@
     <MESSAGE value="第一次 ssw1" />
     <MESSAGE value="ssw 2" />
     <MESSAGE value="jj" />
-    <option name="LAST_COMMIT_MESSAGE" value="jj" />
+    <MESSAGE value="444" />
+    <option name="LAST_COMMIT_MESSAGE" value="444" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1081,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="150">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
