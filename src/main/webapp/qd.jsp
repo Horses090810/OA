@@ -8,20 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>${usernfo.name}
+    <title>Title</title>
     <link rel="stylesheet"
           href="${pageContext.request.contextPath}/layui/css/layui.css">
     <script src="${pageContext.request.contextPath}/layui/layui.all.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-
+${usernfo.name}
 <div class="layui-card">
     <div class="layui-card-header">签到,签退</div>
     <div class="layui-card-body">
 
         签到日期:  <% Timestamp time =  new Timestamp(System.currentTimeMillis()); out.println(time.toString()); %>
 
+        <input type="hidden" name="name" id="name" value="${userfo.name}">
         <%--        --%>
         <div class="layui-form-item layui-form-text">
             <input type="button" value="签到" id="addqd" >
@@ -43,12 +44,15 @@
     }
     window.οnlοad=gettime;
     $(function () {
-        $("#add").click(function () {
+        $("#addqd").click(function () {
+
+
             $.ajax({
+
                 url:
                     '${pageContext.request.contextPath}/addqd.do',
                 type: 'POST',
-                data:{name:$("#name").val(),bq:$("#bq").val()},
+                data:{name:$("#name"),bq:$("#bq").val()},
                 success: function (data) {
                     if (data == '添加成功') {
                      alert(data);
