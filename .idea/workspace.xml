@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aafff74-05a3-4ca4-a4a2-c2c8396feefb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ls.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/qd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" afterDir="false" />
-    </list>
+    <list default="true" id="0aafff74-05a3-4ca4-a4a2-c2c8396feefb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,7 +115,7 @@
           <entry key="java" value="3670" />
           <entry key="js" value="365" />
           <entry key="jsp" value="4838" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="8" />
           <entry key="xml" value="520" />
         </counts>
       </usages-collector>
@@ -135,7 +126,7 @@
           <entry key="JAVA" value="3670" />
           <entry key="JSP" value="4838" />
           <entry key="JavaScript" value="364" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SQL" value="16" />
           <entry key="XML" value="504" />
         </counts>
@@ -451,7 +442,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569585052982" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569585257013" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -605,7 +596,7 @@
       <workItem from="1569321120755" duration="4000000" />
       <workItem from="1569370748939" duration="760000" />
       <workItem from="1569373846365" duration="61899000" />
-      <workItem from="1569558541215" duration="12601000" />
+      <workItem from="1569558541215" duration="12885000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -642,18 +633,46 @@
       <option name="project" value="LOCAL" />
       <updated>1569583640481</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="jj">
+      <created>1569585023626</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585023626</updated>
+    </task>
+    <task id="LOCAL-00007" summary="jj">
+      <created>1569585050946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585050946</updated>
+    </task>
+    <task id="LOCAL-00008" summary="jj">
+      <created>1569585059597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585059597</updated>
+    </task>
+    <task id="LOCAL-00009" summary="jj">
+      <created>1569585096604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585096604</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117712000" />
+    <option name="totallyTimeSpent" value="117996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
       <window_info id="BPMN Editor" order="0" weight="0.3297587" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.79587156" visible="true" weight="0.18632708" />
-      <window_info id="Structure" order="2" sideWeight="0.20412844" side_tool="true" visible="true" weight="0.18632708" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.796" visible="true" weight="0.18632708" />
+      <window_info id="Structure" order="2" sideWeight="0.204" side_tool="true" visible="true" weight="0.18632708" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
@@ -664,17 +683,17 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6869973" weight="0.44295302" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4147651" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5630027" weight="0.4147651" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3266399" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3253012" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3867292" side_tool="true" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.38739946" side_tool="true" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Spring" order="10" weight="0.32931727" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3266399" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.61327076" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.61260056" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.2818792" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3261745" />
       <window_info anchor="bottom" id="Problems" order="16" show_stripe_button="false" weight="0.32931727" />
@@ -704,7 +723,8 @@
     <MESSAGE value="第一次 ssw" />
     <MESSAGE value="第一次 ssw1" />
     <MESSAGE value="ssw 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssw 2" />
+    <MESSAGE value="jj" />
+    <option name="LAST_COMMIT_MESSAGE" value="jj" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
