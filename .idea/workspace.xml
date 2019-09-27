@@ -7,47 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aafff74-05a3-4ca4-a4a2-c2c8396feefb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ls.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/qd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/FileinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/entity/Accessoryfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/entity/Accessoryfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/entity/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/entity/Userinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/FileinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/FileinfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/FileinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/FileinfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bwxqym.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bwxqym.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bwym.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bwym.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/department.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/department.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/department_tail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/department_tail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/department_tails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/department_tails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hszym.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hszym.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bstable/organize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ss.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ss.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/wjcxym.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/wjcxym.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/dao/FileinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Accessoryfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/entity/Accessoryfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/dao/FileinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/entity/Accessoryfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/entity/Accessoryfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/begin_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/begin_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/calendar/mycalendar_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/calendar/mycalendar_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/index_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/login_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/right_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/OA/org/apache/jsp/right_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OA/WEB-INF/classes/cn/web/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/web/LoginController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -177,7 +144,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/department_tail.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -204,11 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-498">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="660">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -462,34 +429,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Serviceimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -498,23 +437,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bstable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -529,7 +451,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569583445312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569585002780" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -683,7 +605,7 @@
       <workItem from="1569321120755" duration="4000000" />
       <workItem from="1569370748939" duration="760000" />
       <workItem from="1569373846365" duration="61899000" />
-      <workItem from="1569558541215" duration="11423000" />
+      <workItem from="1569558541215" duration="12601000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -713,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569583394662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ssw 2">
+      <created>1569583640481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569583640481</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116534000" />
+    <option name="totallyTimeSpent" value="117712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -1064,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/DepartmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1134,6 +1056,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="38" />
         </state>
       </provider>
     </entry>
