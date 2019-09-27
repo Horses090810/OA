@@ -8,11 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c2ef9d5-373f-4e35-a6f9-95c7fa614af0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/dao/kqglMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/kqglServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/Serviceimpl/kqglServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/service/kqglService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/service/kqglService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/web/kqglController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/web/kqglController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -328,7 +323,7 @@
       <workItem from="1569369117931" duration="2621000" />
       <workItem from="1569374103290" duration="867000" />
       <workItem from="1569458256476" duration="2456000" />
-      <workItem from="1569572472965" duration="8455000" />
+      <workItem from="1569572472965" duration="9358000" />
     </task>
     <task id="LOCAL-00001" summary="第一次 ssw">
       <created>1569219329985</created>
@@ -379,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569577747562</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="第一">
+      <created>1569583498147</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569583498147</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +403,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次 ssw" />
     <MESSAGE value="第一次" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次" />
+    <MESSAGE value="第一" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一" />
   </component>
   <component name="masterDetails">
     <states>
