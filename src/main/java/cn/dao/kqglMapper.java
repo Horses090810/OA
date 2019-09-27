@@ -21,12 +21,13 @@ public interface kqglMapper {
 
     public List<Map> selectAll();
 
-    public List<Map> selectqd(@Param("name") String name);
 
     public int  addqd(@Param("map") Map term);
 
     public int  addqt(@Param("map") Map term);
 
+    public List<Map> selectqd(@Param("name") String name);
 
+    public List<Map> selectqt(@Param("name") String name);
 
 }

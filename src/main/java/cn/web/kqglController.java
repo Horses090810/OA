@@ -1,6 +1,9 @@
 package cn.web;
 
+import cn.entity.Userinfo;
 import cn.service.kqglService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.management.openmbean.TabularDataSupport;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +22,6 @@ public class kqglController {
 
     @Autowired
     private kqglService kqglService;
-
 
     @RequestMapping("ls")
     public String ls()
@@ -39,7 +42,7 @@ public class kqglController {
         return "/qd";
     }
 
-
+    LoginController LoginController=new LoginController();
 
     //分页
     @RequestMapping(value="show",produces="application/json;charset=utf-8")
@@ -112,12 +115,6 @@ public class kqglController {
     }
 
 
-    @RequestMapping("selectqd")
-    public List selectqd(String name)
-    {
-
-        return kqglService.selectqd(name);
-    }
 
     @RequestMapping(value = "addqd",method= RequestMethod.POST,produces="text/plain;charset=utf-8")
     @ResponseBody
@@ -148,6 +145,26 @@ public class kqglController {
         }else {
             return "添加失败";
         }
+    }
+
+
+    @RequestMapping("selectqd")
+    public List selectqd(String name)
+    {
+        Subject subject = SecurityUtils.getSubject();
+        Map<String, Object> principal = (Map<String, Object>) subject.getPrincipal();
+        Userinfo userinfo = (Userinfo) principal.get("userinfo");
+        return kqglService.selectqd(userinfo.getUsername());
+    }
+
+
+    @RequestMapping("selectqt")
+    public List selectqt(String name)
+    {
+        Subject subject = SecurityUtils.getSubject();
+        Map<String, Object> principal = (Map<String, Object>) subject.getPrincipal();
+        Userinfo userinfo = (Userinfo) principal.get("userinfo");
+        return kqglService.selectqt(userinfo.getUsername());
     }
 
 }

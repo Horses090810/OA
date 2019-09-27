@@ -56,6 +56,13 @@ public class kqglServiceImpl implements kqglService {
         return kqglMapper.selectqd(name);
     }
 
+
+    @Override
+    public List<Map> selectqt(String name)
+    {
+        return kqglMapper.selectqt(name);
+    }
+
     @Override
     public boolean  addqd(Map term) {
         if (kqglMapper.addqd(term)>0){

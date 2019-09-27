@@ -30,4 +30,6 @@ public interface kqglService {
 
     public  boolean  addqt( Map term);
 
+    List<Map> selectqt(String name);
+
 }
