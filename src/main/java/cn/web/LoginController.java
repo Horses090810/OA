@@ -30,6 +30,7 @@ public class LoginController {
         Userinfo userinfo = (Userinfo) principal.get("userinfo");
         List<Map<String, Object>> list = (List<Map<String, Object>>) principal.get("list");
         //用户信息
+        System.out.println(userinfo.getUsername());
         model.addAttribute("userinfo", userinfo);
         session.setAttribute("userinfo",userinfo);
         //菜单集合
