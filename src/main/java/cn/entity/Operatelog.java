@@ -5,11 +5,11 @@ import java.util.Date;
 public class Operatelog {
     private Integer operateid;
 
-    private Integer userid;
+    private String userid;
 
     private String operatename;
 
-    private Integer objectid;
+    private String objectid;
 
     private String operatedesc;
 
@@ -23,11 +23,11 @@ public class Operatelog {
         this.operateid = operateid;
     }
 
-    public Integer getUserid() {
+    public String getUserid() {
         return userid;
     }
 
-    public void setUserid(Integer userid) {
+    public void setUserid(String userid) {
         this.userid = userid;
     }
 
@@ -39,11 +39,11 @@ public class Operatelog {
         this.operatename = operatename == null ? null : operatename.trim();
     }
 
-    public Integer getObjectid() {
+    public String getObjectid() {
         return objectid;
     }
 
-    public void setObjectid(Integer objectid) {
+    public void setObjectid(String objectid) {
         this.objectid = objectid;
     }
 

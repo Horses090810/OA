@@ -12,7 +12,11 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,10 +26,13 @@ import java.util.Map;
  * @创建时间 2019/9/3
  * 描述
  */
-public class MyRealm extends AuthorizingRealm {
+public class MyRealm extends AuthorizingRealm{
 
     @Autowired
     private UserinfoService userinfoService;
+
+    @Autowired
+    private HttpServletRequest request;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
@@ -37,6 +44,9 @@ public class MyRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String principal = (String) token.getPrincipal();
+
+        request.getSession().setAttribute("userid",principal);
+
         System.out.println(principal);
 
         Userinfo userinfo = userinfoService.selectByUname(principal);

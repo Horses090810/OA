@@ -3,6 +3,19 @@ package cn.entity;
 import java.util.Date;
 
 public class Loginlog {
+
+    public Loginlog() {
+    }
+
+    public Loginlog(Integer loginid, String userid, Date logintime, Integer ifsuccess, String loginuserip, String logindesc) {
+        this.loginid = loginid;
+        this.userid = userid;
+        this.logintime = logintime;
+        this.ifsuccess = ifsuccess;
+        this.loginuserip = loginuserip;
+        this.logindesc = logindesc;
+    }
+
     private Integer loginid;
 
     private String userid;

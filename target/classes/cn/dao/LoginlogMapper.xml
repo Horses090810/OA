@@ -18,4 +18,60 @@
     from loginlog
     where loginid = #{loginid,jdbcType=INTEGER}
   </select>
+  <select id="findLoginlogAll" resultType="cn.entity.Loginlog">
+        select * from loginlog
+  </select>
+
+  <insert id="loginlogAdd" parameterType="cn.entity.Loginlog">
+        insert into loginlog values (0,#{userid},#{logintime},#{ifsuccess},#{loginuserip},#{logindesc});
+  </insert>
+
+  <select id="selectLoginlog" parameterType="map" resultType="cn.entity.Loginlog">
+        select * from loginlog where 1=1
+        <if test="time1!=null and time1!='' and time2!=null and time2!=''">
+            and logintime>=#{time1} and logintime &lt;= #{time2}
+        </if>
+        <if test="time1!=null and time1!='' and time2==''">
+          and logintime>=#{time1}
+        </if>
+        <if test="time1=='' and time2!=null and time2!=''">
+          and logintime &lt;= #{time2}
+        </if>
+      <if test="days!=null and days!=''">
+            <if test="days==1">
+                and TO_DAYS(logintime)=to_days(now())
+            </if>
+          <if test="days==2">
+            and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= date(logintime)
+          </if>
+          <if test="days==3">
+            and DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;= date(logintime)
+          </if>
+      </if>
+      limit #{pageNo},5
+  </select>
+
+  <select id="loginlogcount" parameterType="map" resultType="java.lang.Integer">
+    select count(1) from loginlog where 1=1
+    <if test="time1!=null and time1!='' and time2!=null and time2!=''">
+      and logintime>=#{time1} and logintime &lt;= #{time2}
+    </if>
+    <if test="time1!=null and time1!='' and time2==''">
+      and logintime>=#{time1}
+    </if>
+    <if test="time1=='' and time2!=null and time2!=''">
+      and logintime &lt;= #{time2}
+    </if>
+    <if test="days!=null and days!=''">
+      <if test="days==1">
+        and TO_DAYS(logintime)=to_days(now())
+      </if>
+      <if test="days==2">
+        and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= date(logintime)
+      </if>
+      <if test="days==3">
+        and DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;= date(logintime)
+      </if>
+    </if>
+  </select>
 </mapper>

@@ -166,16 +166,14 @@
                             <div class="col-lg-10">
                                 <select class="form-control m-bot15" name="roleid">
                                     <option value="">请选择</option>
-                                    <option value="1"
-                                            <c:if test="${msg.roleid == 1}">
-                                                selected
-                                            </c:if>
-                                    >超级管理员</option>
-                                    <option value="2"
-                                            <c:if test="${msg.roleid == 2}">
-                                                selected
-                                            </c:if>
-                                    >普通用户</option>
+                                    <c:forEach items="${roleall}" var="r">
+                                        <c:if test="${msg.roleid == r.roleid}">
+                                            <option selected value="${r.roleid}">${r.rolename}</option>
+                                        </c:if>
+                                        <c:if test="${msg.roleid != r.roleid}">
+                                            <option value="${r.roleid}">${r.rolename}</option>
+                                        </c:if>
+                                    </c:forEach>
                                 </select>
                             </div>
                         </div>

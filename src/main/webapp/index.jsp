@@ -274,18 +274,6 @@
                           <li>
                               <a href="#"><i class="icon_clock_alt"></i> 帮助</a>
                           </li>
-                          <!--                            <li>-->
-                          <!--                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>-->
-                          <!--                            </li>-->
-                          <!--                            <li>-->
-                          <!--                                <a href="login.jsp"><i class="icon_key_alt"></i> Log Out</a>-->
-                          <!--                            </li>-->
-                          <!--                            <li>-->
-                          <!--                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>-->
-                          <!--                            </li>-->
-                          <!--                            <li>-->
-                          <!--                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>-->
-                          <!--                            </li>-->
                       </ul>
                   </li>
               </ul>
@@ -294,7 +282,7 @@
       <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
-              <ul class="sidebar-menu">
+              <ul class="sidebar-menu" id="menu">
                   <c:forEach items="${list}" var="l" varStatus="s">
                       <c:if test="${l.parentnodeid==l.nodeid}">
                           <li class="sub-menu">
@@ -313,6 +301,12 @@
                           </li>
                       </c:if>
                   </c:forEach>
+                  <li>
+                      <div style="margin-top: 20px;" align="center">
+                          <button onclick="up(this);" style="background-color: #01a7b3;" class="btn btn-danger">上移</button>
+                          <button onclick="down(this);" style="background-color: #01a7b3;" class="btn btn-danger">下移</button>
+                      </div>
+                  </li>
               </ul>
           </div>
       </aside>
@@ -405,7 +399,15 @@
 	  });
 	});
 
+    function up(obj) {
+        var li=$('#menu>li:eq(0)');
+        $(obj).parent().parent().before(li);
+    }
 
+    function down(obj) {
+        var li=$('#menu>li:last').prev();
+        $("#menu").prepend(li);
+    }
 
   </script>
 

@@ -1,9 +1,8 @@
 package cn.web;
 
-import cn.entity.Branchinfo;
-import cn.entity.Departinfo;
-import cn.entity.Userinfo;
+import cn.entity.*;
 import cn.service.PersonnelServiece;
+import cn.service.systemService;
 import cn.util.Pagetion;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.web.session.HttpServletSession;
@@ -18,6 +17,7 @@ import sun.security.provider.MD5;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +36,8 @@ public class PersonnelController {
     @Autowired
     private HttpServletRequest request;
 
+    @Autowired
+    private systemService systemservice;
 
     /**
      * 条件查询所有机构
@@ -288,7 +290,9 @@ public class PersonnelController {
             model.addAttribute("msg",msg);
         }
         List<Departinfo> departinfos = personnelServiece.findDepartAll();
+        List<Roleinfo> roleAll = systemservice.findRoleAll();
         model.addAttribute("departinfos",departinfos);
+        model.addAttribute("roleall",roleAll);
         return "/personnel/userinfoAddorUpdate";
     }
 
@@ -299,6 +303,17 @@ public class PersonnelController {
         System.out.println("$$$$$$$$$$$"+map.get("departid").toString());
         personnelServiece.userinfoAdd(map);
         request.getSession().setAttribute("branchinfoadd","add");
+
+        Operatelog operatelog = new Operatelog();
+        Userinfo userinfo=(Userinfo)request.getSession().getAttribute("userinfo");
+        operatelog.setUserid(userinfo.getUsername());
+        operatelog.setOperatetime(new Date());
+        operatelog.setObjectid("userinfo");
+        operatelog.setOperatename("添加");
+        operatelog.setOperatedesc(userinfo.getUsername()+"添加了用户");
+
+        systemservice.operateAdd(operatelog);
+
         return "redirect:/employee.do";
     }
 
@@ -307,6 +322,17 @@ public class PersonnelController {
 //        Md5Hash md5 = new Md5Hash(map.get("password").toString(),"kh",3);
 //        map.put("password",md5.toString());
         personnelServiece.userinfoUpdate(map);
+
+        Operatelog operatelog = new Operatelog();
+        Userinfo userinfo=(Userinfo)request.getSession().getAttribute("userinfo");
+        operatelog.setUserid(userinfo.getUsername());
+        operatelog.setOperatetime(new Date());
+        operatelog.setObjectid("userinfo");
+        operatelog.setOperatename("修改");
+        operatelog.setOperatedesc(userinfo.getUsername()+"修改了用户");
+
+        systemservice.operateAdd(operatelog);
+
         return "redirect:/employee.do";
     }
 
@@ -314,6 +340,16 @@ public class PersonnelController {
     public String userinfoDel(@PathVariable("userid") String userid,
                               @PathVariable("username") String username){
         personnelServiece.userinfoDel(Integer.parseInt(userid));
+
+        Operatelog operatelog = new Operatelog();
+        Userinfo userinfo=(Userinfo)request.getSession().getAttribute("userinfo");
+        operatelog.setUserid(userinfo.getUsername());
+        operatelog.setOperatetime(new Date());
+        operatelog.setObjectid("userinfo");
+        operatelog.setOperatename("删除");
+        operatelog.setOperatedesc(userinfo.getUsername()+"删除了用户");
+
+        systemservice.operateAdd(operatelog);
 
         //删除头像
         String path = request.getSession().getServletContext().getRealPath("/upload");

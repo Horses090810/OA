@@ -18,4 +18,57 @@
     from operatelog
     where operateid = #{operateid,jdbcType=INTEGER}
   </select>
+
+  <select id="findOperatelogAll" parameterType="map" resultType="cn.entity.Operatelog">
+        select * from operatelog where 1=1
+    <if test="time1!=null and time1!='' and time2!=null and time2!=''">
+      and operatetime>=#{time1} and operatetime &lt;= #{time2}
+    </if>
+    <if test="time1!=null and time1!='' and time2==''">
+      and operatetime>=#{time1}
+    </if>
+    <if test="time1=='' and time2!=null and time2!=''">
+      and operatetime &lt;= #{time2}
+    </if>
+    <if test="days!=null and days!=''">
+      <if test="days==1">
+        and TO_DAYS(operatetime)=to_days(now())
+      </if>
+      <if test="days==2">
+        and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= date(operatetime)
+      </if>
+      <if test="days==3">
+        and DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;= date(operatetime)
+      </if>
+    </if>
+    limit #{pageNo},5
+  </select>
+
+  <select id="operateCount" resultType="java.lang.Integer" parameterType="map">
+        select count(1) from operatelog where 1=1
+    <if test="time1!=null and time1!='' and time2!=null and time2!=''">
+      and operatetime>=#{time1} and operatetime &lt;= #{time2}
+    </if>
+    <if test="time1!=null and time1!='' and time2==''">
+      and operatetime>=#{time1}
+    </if>
+    <if test="time1=='' and time2!=null and time2!=''">
+      and operatetime &lt;= #{time2}
+    </if>
+    <if test="days!=null and days!=''">
+      <if test="days==1">
+        and TO_DAYS(operatetime)=to_days(now())
+      </if>
+      <if test="days==2">
+        and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= date(operatetime)
+      </if>
+      <if test="days==3">
+        and DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;= date(operatetime)
+      </if>
+    </if>
+  </select>
+
+  <insert id="operateAdd" parameterType="cn.entity.Operatelog">
+        insert operatelog values (0,#{userid},#{operatename},#{objectid},#{operatedesc},#{operatetime})
+  </insert>
 </mapper>

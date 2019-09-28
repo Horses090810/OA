@@ -15,4 +15,12 @@
     from roleright
     where rolerightid = #{rolerightid,jdbcType=INTEGER}
   </select>
+
+  <delete id="rolerightdel" parameterType="java.lang.Integer">
+        delete from roleright where roleid=#{roleid}
+  </delete>
+
+  <insert id="rolerightadd" parameterType="cn.entity.Roleright">
+        insert into roleright values (0,#{roleid},#{nodeid});
+  </insert>
 </mapper>

@@ -15,4 +15,19 @@
     from roleinfo
     where roleid = #{roleid,jdbcType=INTEGER}
   </select>
+  <select id="findRoleAll" resultType="cn.entity.Roleinfo">
+        select * from roleinfo
+  </select>
+
+  <insert id="roleinfoadd" parameterType="cn.entity.Roleinfo">
+        insert roleinfo values (0,#{rolename},#{roledesc})
+  </insert>
+
+  <update id="roleinfoupdate" parameterType="cn.entity.Roleinfo">
+        update roleinfo SET rolename=#{rolename},roledesc=#{roledesc} where roleid=#{roleid}
+  </update>
+
+  <delete id="roleinfodel" parameterType="java.lang.Integer">
+        delete from roleinfo where roleid=#{roleid}
+  </delete>
 </mapper>
