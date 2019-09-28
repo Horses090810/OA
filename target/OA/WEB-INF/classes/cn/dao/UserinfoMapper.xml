@@ -65,4 +65,8 @@
     <select id="userinfoDel">
         delete from userinfo where userid=#{userid}
     </select>
+
+    <select id="findUserinfoAll" resultType="cn.entity.Userinfo">
+        select * from userinfo
+    </select>
 </mapper>

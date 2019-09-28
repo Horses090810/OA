@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.dao.kqglMapper">
+
+    <!--分页-->
+    <select id="showAll" resultType="map">
+        SELECT m.signid,u.username,m.signtime,m.signtag,m.signdesc,d.departname,b.branchshortname FROM manualsign m
+JOIN userinfo u ON m.userid =u.userid
+JOIN departinfo d ON u.departid=d.departid
+JOIN branchinfo b ON b.branchid=d.branchid
+WHERE DATE(m.signtime)=DATE(NOW()) limit #{page},#{limit}
+    </select>
+
+    <!--查询总行数-->
+    <select id="selTotal" resultType="Integer">
+     SELECT COUNT(*) FROM manualsign m
+JOIN userinfo u ON m.userid =u.userid
+JOIN departinfo d ON u.departid=d.departid
+JOIN branchinfo b ON b.branchid=d.branchid
+    </select>
+</mapper>

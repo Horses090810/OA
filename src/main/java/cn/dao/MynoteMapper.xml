@@ -17,4 +17,19 @@
     from mynote
     where noteid = #{noteid,jdbcType=INTEGER}
   </select>
+  <select id="findId" resultType="map">
+    SELECT * FROM mynote m WHERE m.`createuser`=#{id}
+  </select>
+  <select id="findBwId" resultType="map">
+    SELECT * FROM mynote m WHERE m.`noteid`=#{id}
+  </select>
+  <update id="uq">
+    UPDATE  `mynote` SET notetitle=#{notetitle},notecontent=#{notecontent},createtime=#{createtime} WHERE noteid=#{noteid}
+  </update>
+  <insert id="add">
+      INSERT `mynote` VALUE(0,#{notetitle},#{notecontent},#{createtime},#{createuser})
+  </insert>
+  <delete id="del">
+    delete from mynote where noteid=#{id}
+  </delete>
 </mapper>
