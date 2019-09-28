@@ -32,4 +32,22 @@
   <delete id="del">
     delete from mynote where noteid=#{id}
   </delete>
+  <select id="find" resultType="map">
+   SELECT * FROM `branchinfo`
+  </select>
+  <select id="finds" resultType="map">
+   SELECT * FROM `departinfo`
+   <where>
+      <if test="id!=null">
+        branchid=#{id}
+      </if>
+   </where>
+
+  </select>
+  <select id="" resultType="map">
+    select * from schedule
+    <where>
+      if()
+    </where>
+  </select>
 </mapper>

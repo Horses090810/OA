@@ -34,9 +34,12 @@
 
             </div>
             <div class="notice_nav r_right">
-                <a id="xz" style="margin-left: 400px;" class="btn btn-default" r="" onclick="add_department()"><span class="glyphicon glyphicon-plus"></span>新增</a>
+                <a id="xzwj" style="margin-left: 350px;" class="btn btn-default" r="" onclick="add_departments(0)"><span
+                        class="glyphicon glyphicon-plus"></span>新增文件夹</a>
+                <a id="xz" style="margin-left: 20px;" class="btn btn-default" r="" onclick="add_department(0)"><span
+                        class="glyphicon glyphicon-plus"></span>新增文件</a>
             </div>
-            <div class="clear"  ></div>
+            <div class="clear"></div>
         </div>
         <ul class="news_table department_table">
             <li>
@@ -45,7 +48,7 @@
         </ul>
     </div>
     <div class="clear"></div>
-
+    <input type="hidden" id="id" value="">
 </div>
 <script src="js/bstable/jQuery-2.2.0.min.js"></script>
 <script src="js/bstable/bootstrap.min.js"></script>
@@ -63,18 +66,24 @@
         nav();
     });
 
-    function add_department() {
-        // layer.open({
-        //     type: 2,
-        //     title: '添加部门',
-        //     shadeClose: true,
-        //     shade: 0.5,
-        //     skin: 'layui-layer-rim',
-        //     closeBtn: 1,
-        //     area: ['700px', '400px'],
-        //     content: 'department_tail.jsp'
-        // });
+    function add_departments(s) {
         //alert($("#xz").attr("r"));
+        var ss = $('#id').val();
+        layer.open({
+            type: 2,
+            title: '文件夹',
+            shadeClose: true,
+            shade: 0.5,
+            skin: 'layui-layer-rim',
+            closeBtn: 1,
+            area: ['700px', '400px'],
+            content: 'department_tails/' + s + '/' + ss + '.do'
+        });
+    }
+
+    function add_department(s) {
+
+        var ss = $('#id').val();
         layer.open({
             type: 2,
             title: '文件属性',
@@ -82,8 +91,8 @@
             shade: 0.5,
             skin: 'layui-layer-rim',
             closeBtn: 1,
-            area: ['400px', '300px'],
-            content: 'department_tail.jsp'
+            area: ['800px', '600px'],
+            content: 'department_tail/' + s + '/' + ss + '.do'
         });
     }
 
@@ -159,6 +168,7 @@
                     field: 'results',
                     align: 'center',
                 }
+
             ]
         });
     }
@@ -177,8 +187,8 @@
     }
 
     var ss = eval("(" + '${ss}' + ")");
-    var userinfo='${userinfo.username}';
-    var userinfoid='${userinfo.roleid}';
+    var userinfo = '${userinfo.username}';
+    var userinfoid = '${userinfo.roleid}';
 </script>
 <script src="js/bstable/organize.js"></script>
 </body>

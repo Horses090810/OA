@@ -36,6 +36,22 @@ public class MynoteServiceImpl implements MynoteService {
         }
 
         @Override
+        public List<Map> findTj(Map map) {
+                return mynoteMapper.findTj(map);
+        }
+
+        @Override
+        public List<Map> find() {
+
+                return mynoteMapper.find();
+        }
+
+        @Override
+        public List<Map> finds(String id) {
+                return mynoteMapper.finds(Integer.parseInt(id)==0?null:Integer.parseInt(id));
+        }
+
+        @Override
         public void del(String id) {
                 mynoteMapper.del(id);
         }

@@ -13,4 +13,7 @@ public interface MynoteMapper {
     void add(Mynote my);
     void uq(Mynote my);
     void del(@Param("id") String id);
+        List<Map> find();
+        List<Map> finds(@Param("id") Integer id);
+    List<Map> findTj(Map map);
 }
