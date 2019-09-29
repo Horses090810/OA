@@ -18,7 +18,7 @@
 <script>
 </script>
 <body style="margin: 0px">
-<form action="/sstjff.do" method="post">
+<form action="sstjff.do" method="post">
     <table width="100%" style="margin-bottom: 20px;height: 90%"
            class="table table-bordered table-condensed table-no-bordered table-responsive table-striped">
         <tr style="height: 10%">
@@ -54,7 +54,7 @@
                 </div>
             </td>
             <td id="ssd" class="col-md-8" style="width: 100%;height: 100%;">
-                <c:if test="${list!=null and list!=[]}">
+                <c:if test="${list!=null and list!='[]'}">
                     <table width="100%" style="margin-bottom: 50px;"
                            class="table table-bordered table-condensed table-no-bordered table-responsive table-striped">
                         <tr>
@@ -74,7 +74,7 @@
                                 </td>
 
                                 <td>${s.filepath}</td>
-                                <td><img src="/img/${s.filetypeimage}" style="width: 30px;height: 30px" alt=""></td>
+                                <td><img src="img/${s.filetypeimage}" style="width: 30px;height: 30px" alt=""></td>
                                 <td>${s.fileowner}</td>
                                 <td>${s.createdate}</td>
                             </tr>
@@ -87,14 +87,14 @@
 </form>
 </body>
 </html>
-<script src="/js/bstable/jQuery-2.2.0.min.js"></script>
-<script src="/js/bstable/bootstrap.min.js"></script>
-<script src="/js/bstable/bootstrap-table.js"></script>
-<script src="/js/bstable/bootstrap-table-zh-CN.min.js"></script>
-<script type="text/javascript" src="/js/bstable/jquery.ztree.core-3.5.js"></script>
-<script type="text/javascript" src="/js/bstable/jquery.ztree.excheck-3.5.js"></script>
-<script type="text/javascript" src="/js/bstable/jquery.ztree.exedit-3.5.js"></script>
-<script src="/js/bstable/layer.js"></script>
+<script src="js/bstable/jQuery-2.2.0.min.js"></script>
+<script src="js/bstable/bootstrap.min.js"></script>
+<script src="js/bstable/bootstrap-table.js"></script>
+<script src="js/bstable/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="js/bstable/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="js/bstable/jquery.ztree.excheck-3.5.js"></script>
+<script type="text/javascript" src="js/bstable/jquery.ztree.exedit-3.5.js"></script>
+<script src="js/bstable/layer.js"></script>
 <script>
 
     function djff() {

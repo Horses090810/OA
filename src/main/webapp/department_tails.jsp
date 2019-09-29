@@ -12,10 +12,10 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/wjjtj.do" method="post">
+<form action="/OA/wjjtj.do" method="post">
     <table style="height: 300px;">
         <tr>
-            <td><img src="/img/文件夹.jpg" style="width: 30px;height: 30px" alt=""></td>
+            <td><img src="/OA/img/文件夹.jpg" style="width: 30px;height: 30px" alt=""></td>
             <td><input type="text" name="filename" style="width: 600px;" value="${list.filename}"></td>
         </tr>
         <tr>

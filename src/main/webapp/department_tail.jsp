@@ -11,7 +11,7 @@
 <script>
 </script>
 <body style="border-radius: 8px;width: 650px;text-align: center;margin-left: 30px">
-<form action="/wjtj.do" id="from" method="post">
+<form action="/OA/wjtj.do" id="from" method="post">
     <table class="table">
         <tr>
             <td>文件名：</td>
@@ -44,7 +44,7 @@
                     <div style="width: 80px; height: 30px;float: left;margin-right: 20px;">
                         <input type="radio" name="filetype" value="${s.filetypeid}"
                                <c:if test="${s.filetypeid==list.filetype or (list.filetype==null and s.filetypeid==2)}">checked</c:if> /><img
-                            src="/img/${s.filetypeimage}" style="width: 30px;height: 30px;" alt="">
+                            src="/OA/img/${s.filetypeimage}" style="width: 30px;height: 30px;" alt="">
                     </div>
                 </c:forEach>
             </td>
@@ -74,7 +74,7 @@
     <input type="hidden" value="${list.parentid}" name="parentid">
     <input type="hidden" name="fileid" value="${list.fileid}">
 </form>
-<form action="/file.do" id="ss" method="post" enctype="multipart/form-data">
+<form action="/OA/file.do" id="ss" method="post" enctype="multipart/form-data">
     <input type="hidden" name="ff" id="ff" value="0">
     <input type="hidden" value="${list.filepath}" name="filepath">
     <input type="hidden" name="fileid" value="${list.fileid}">
@@ -96,8 +96,8 @@
 
 </body>
 </html>
-<script src="/js/jquery-2.2.0.min.js"></script>
-<script src="/js/jquery.js"></script>
+<script src="/OA/js/jquery-2.2.0.min.js"></script>
+<script src="/OA/js/jquery.js"></script>
 <script>
     function ff(s) {
         alert(s + "/${list.filepath}/${list.fileid}");

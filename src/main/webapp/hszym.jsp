@@ -37,17 +37,17 @@
         <tr>
             <td>${s.filename}</td>
             <td>${s.filepath}</td>
-            <td><img src="/img/${s.filetypeimage}" alt="" style="width: 30px;height: 30px"></td>
+            <td><img src="/OA/img/${s.filetypeimage}" alt="" style="width: 30px;height: 30px"></td>
             <td>${s.fileowner}</td>
             <td>${s.createdate}</td>
             <td>
                 <a style="margin-left: 20px;" class="btn btn-default" r=""
-                   onclick="location.href='/hyId/${s.fileid}.do'"><span
+                   onclick="location.href='/OA/hyId/${s.fileid}.do'"><span
                         class="glyphicon glyphicon-share"></span></a>
             </td>
             <td>
                 <a style="margin-left: 20px;" class="btn btn-default" r=""
-                   onclick="location.href='/scId/${s.fileid}.do'"><span
+                   onclick="location.href='/OA/scId/${s.fileid}.do'"><span
                         class="glyphicon glyphicon-remove"></span></a>
             </td>
         </tr>

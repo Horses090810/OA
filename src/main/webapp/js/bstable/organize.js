@@ -122,7 +122,7 @@ function wjzjff(id) {
         }
         //'<tr class="no-records-found"><td>s</td><td>d</td> <td>s</td></tr>'
         $.each(data, function (i, g) {
-            $('.table tbody').append('<tr data-index="' + i + '"><td style="text-align: center; vertical-align: middle; "><img src="/img/' + g.filetypeimage + '" style="width: 30px;height: 30px" alt="">'
+            $('.table tbody').append('<tr data-index="' + i + '"><td style="text-align: center; vertical-align: middle; "><img src="/OA/img/' + g.filetypeimage + '" style="width: 30px;height: 30px" alt="">'
                 + '</td style="text-align: center; vertical-align: middle; "> <td style="text-align: center; vertical-align: middle; ">' + g.filename + '</td><td style="text-align: center; vertical-align: middle; ">' + g.filetypename + '</td>' +
                 '<td style="text-align: center; vertical-align: middle; ">' + g.remark + '</td><td style="text-align: center; vertical-align: middle; ">' + g.fileowner + '</td></td><td>' + g.createdate + '</td>' +
                 '<td style="text-align: center; vertical-align: middle; "><a class="btn btn-default" onclick="return ' + (g.filetype == 1 ? "add_departments(" + g.fileid + ")" : "add_department(" + g.fileid + ")") + '"><span ' + (g.filetype == 1 ? "class=\"glyphicon glyphicon-folder-open\"" : "class=\"glyphicon glyphicon-list\"") + ' ></span></a></td>' +
